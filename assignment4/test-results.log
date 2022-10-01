@@ -1,0 +1,98 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment4
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_______________________ ERROR collecting test_student.py _______________________
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/python.py:511: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/hassan/anaconda3/lib/python3.8/site-packages/py/_path/local.py:704: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:991: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:975: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:671: in _load_unlocked
+    ???
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+test_student.py:2: in <module>
+    from a05 import get_companies_names
+E     File "/home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment4/a05.py", line 36
+E       def get_companies:
+E                        ^
+E   SyntaxError: invalid syntax
+=========================== short test summary info ============================
+ERROR test_student.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.17s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment4
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 10 items
+
+test_student.py .......FFF                                               [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_get_companies_1 _____________________________
+
+    def test_get_companies_1():
+        location = {'city': 'Tirana', 'country': 'Albania'}
+>       assert get_companies(companyList, location) == ['Gjirafa', 'Shqiperia Com']
+E       TypeError: get_companies() takes 1 positional argument but 2 were given
+
+test_student.py:88: TypeError
+_____________________________ test_get_companies_2 _____________________________
+
+    def test_get_companies_2():
+        location = {'city': 'Kabul', 'country': 'Afghanistan'}
+>       assert get_companies(companyList, location) == ['Roshan']
+E       TypeError: get_companies() takes 1 positional argument but 2 were given
+
+test_student.py:92: TypeError
+_____________________________ test_get_companies_3 _____________________________
+
+    def test_get_companies_3():
+        location = {'city': 'Peshawar', 'country': 'Pakistan'}
+>       assert get_companies(companyList, location) == None
+E       TypeError: get_companies() takes 1 positional argument but 2 were given
+
+test_student.py:96: TypeError
+=========================== short test summary info ============================
+FAILED test_student.py::test_get_companies_1 - TypeError: get_companies() tak...
+FAILED test_student.py::test_get_companies_2 - TypeError: get_companies() tak...
+FAILED test_student.py::test_get_companies_3 - TypeError: get_companies() tak...
+========================= 3 failed, 7 passed in 0.06s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment4
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 10 items
+
+test_student.py ..........                                               [100%]
+
+============================== 10 passed in 0.02s ==============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment4
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 10 items
+
+test_student.py ..........                                               [100%]
+
+============================== 10 passed in 0.05s ==============================

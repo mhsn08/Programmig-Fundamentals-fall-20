@@ -1,0 +1,444 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment2
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 10 items
+
+test_student.py ....F..F..                                               [100%]
+
+=================================== FAILURES ===================================
+_______________________ test_calculateProfit_str_check_2 _______________________
+
+    def test_calculateProfit_str_check_2():
+>       assert calculateProfit(1, "2") == "Not Possible"
+
+test_student.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ali_budget = 1, bashir_budget = '2'
+
+    def calculateProfit(ali_budget,bashir_budget):
+        if type(ali_budget)==str or type(bashir_budget)==0 or ali_budget==0 or bashir_budget==0:
+            return "Not Possible"
+        else :
+>           if ali_budget>bashir_budget:
+E           TypeError: '>' not supported between instances of 'int' and 'str'
+
+a03.py:31: TypeError
+____________________________ test_chocolatePrice_2 _____________________________
+
+    def test_chocolatePrice_2():
+>       assert chocolatePrice(99, 18) == 9
+E       assert 3 == 9
+E        +  where 3 = chocolatePrice(99, 18)
+
+test_student.py:34: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateProfit_str_check_2 - TypeError: '>' not...
+FAILED test_student.py::test_chocolatePrice_2 - assert 3 == 9
+========================= 2 failed, 8 passed in 0.07s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment2
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 10 items
+
+test_student.py .......F..                                               [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_chocolatePrice_2 _____________________________
+
+    def test_chocolatePrice_2():
+>       assert chocolatePrice(99, 18) == 9
+E       assert 3 == 9
+E        +  where 3 = chocolatePrice(99, 18)
+
+test_student.py:34: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_chocolatePrice_2 - assert 3 == 9
+========================= 1 failed, 9 passed in 0.05s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment2
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 10 items
+
+test_student.py ..........                                               [100%]
+
+============================== 10 passed in 0.02s ==============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment2
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_______________________ ERROR collecting test_student.py _______________________
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/python.py:511: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/hassan/anaconda3/lib/python3.8/site-packages/py/_path/local.py:704: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:991: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:975: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:671: in _load_unlocked
+    ???
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+test_student.py:1: in <module>
+    from a03 import calculateProfit
+E     File "/home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment2/a03.py", line 5
+E       while a>=guess and b>=guess:
+E                                  ^
+E   IndentationError: unindent does not match any outer indentation level
+=========================== short test summary info ============================
+ERROR test_student.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.19s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment2
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 10 items
+
+test_student.py ......FFFF                                               [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_chocolatePrice_1 _____________________________
+
+    def test_chocolatePrice_1():
+>       assert chocolatePrice(55, 15) == 5
+
+test_student.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ali_budget = 55, bashir_budget = 15
+
+    def chocolatePrice(ali_budget,bashir_budget):
+        counter = 1
+>       while a>=guess and b>=guess:
+E       UnboundLocalError: local variable 'a' referenced before assignment
+
+a03.py:5: UnboundLocalError
+____________________________ test_chocolatePrice_2 _____________________________
+
+    def test_chocolatePrice_2():
+>       assert chocolatePrice(99, 18) == 9
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ali_budget = 99, bashir_budget = 18
+
+    def chocolatePrice(ali_budget,bashir_budget):
+        counter = 1
+>       while a>=guess and b>=guess:
+E       UnboundLocalError: local variable 'a' referenced before assignment
+
+a03.py:5: UnboundLocalError
+____________________________ test_chocolatePrice_3 _____________________________
+
+    def test_chocolatePrice_3():
+>       assert chocolatePrice(30, 12) == 6
+
+test_student.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ali_budget = 30, bashir_budget = 12
+
+    def chocolatePrice(ali_budget,bashir_budget):
+        counter = 1
+>       while a>=guess and b>=guess:
+E       UnboundLocalError: local variable 'a' referenced before assignment
+
+a03.py:5: UnboundLocalError
+____________________________ test_chocolatePrice_4 _____________________________
+
+    def test_chocolatePrice_4():
+>       assert chocolatePrice(50, 10) == 10
+
+test_student.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ali_budget = 50, bashir_budget = 10
+
+    def chocolatePrice(ali_budget,bashir_budget):
+        counter = 1
+>       while a>=guess and b>=guess:
+E       UnboundLocalError: local variable 'a' referenced before assignment
+
+a03.py:5: UnboundLocalError
+=========================== short test summary info ============================
+FAILED test_student.py::test_chocolatePrice_1 - UnboundLocalError: local vari...
+FAILED test_student.py::test_chocolatePrice_2 - UnboundLocalError: local vari...
+FAILED test_student.py::test_chocolatePrice_3 - UnboundLocalError: local vari...
+FAILED test_student.py::test_chocolatePrice_4 - UnboundLocalError: local vari...
+========================= 4 failed, 6 passed in 0.05s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment2
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 10 items
+
+test_student.py ......FFFF                                               [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_chocolatePrice_1 _____________________________
+
+    def test_chocolatePrice_1():
+>       assert chocolatePrice(55, 15) == 5
+
+test_student.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ali_budget = 55, bashir_budget = 15
+
+    def chocolatePrice(ali_budget,bashir_budget):
+        guess = 2
+        counter = 1
+>       while a>=guess and b>=guess:
+E       UnboundLocalError: local variable 'a' referenced before assignment
+
+a03.py:6: UnboundLocalError
+____________________________ test_chocolatePrice_2 _____________________________
+
+    def test_chocolatePrice_2():
+>       assert chocolatePrice(99, 18) == 9
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ali_budget = 99, bashir_budget = 18
+
+    def chocolatePrice(ali_budget,bashir_budget):
+        guess = 2
+        counter = 1
+>       while a>=guess and b>=guess:
+E       UnboundLocalError: local variable 'a' referenced before assignment
+
+a03.py:6: UnboundLocalError
+____________________________ test_chocolatePrice_3 _____________________________
+
+    def test_chocolatePrice_3():
+>       assert chocolatePrice(30, 12) == 6
+
+test_student.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ali_budget = 30, bashir_budget = 12
+
+    def chocolatePrice(ali_budget,bashir_budget):
+        guess = 2
+        counter = 1
+>       while a>=guess and b>=guess:
+E       UnboundLocalError: local variable 'a' referenced before assignment
+
+a03.py:6: UnboundLocalError
+____________________________ test_chocolatePrice_4 _____________________________
+
+    def test_chocolatePrice_4():
+>       assert chocolatePrice(50, 10) == 10
+
+test_student.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ali_budget = 50, bashir_budget = 10
+
+    def chocolatePrice(ali_budget,bashir_budget):
+        guess = 2
+        counter = 1
+>       while a>=guess and b>=guess:
+E       UnboundLocalError: local variable 'a' referenced before assignment
+
+a03.py:6: UnboundLocalError
+=========================== short test summary info ============================
+FAILED test_student.py::test_chocolatePrice_1 - UnboundLocalError: local vari...
+FAILED test_student.py::test_chocolatePrice_2 - UnboundLocalError: local vari...
+FAILED test_student.py::test_chocolatePrice_3 - UnboundLocalError: local vari...
+FAILED test_student.py::test_chocolatePrice_4 - UnboundLocalError: local vari...
+========================= 4 failed, 6 passed in 0.06s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment2
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 10 items
+
+test_student.py ..........                                               [100%]
+
+============================== 10 passed in 0.02s ==============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment2
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 10 items
+
+test_student.py ......FFFF                                               [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_chocolatePrice_1 _____________________________
+
+    def test_chocolatePrice_1():
+>       assert chocolatePrice(55, 15) == 5
+
+test_student.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ali_budget = 55, bashir_budget = 15
+
+    def chocolatePrice(ali_budget,bashir_budget):
+        guess = 2
+        counter = 1
+        while ali_budget>=guess and bashir_budget>=guess:
+            if ali_budget%guess==0 and bashir_budget%guess==0:
+>               ali_budget = a//guess
+E               NameError: name 'a' is not defined
+
+a03.py:9: NameError
+____________________________ test_chocolatePrice_2 _____________________________
+
+    def test_chocolatePrice_2():
+>       assert chocolatePrice(99, 18) == 9
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ali_budget = 99, bashir_budget = 18
+
+    def chocolatePrice(ali_budget,bashir_budget):
+        guess = 2
+        counter = 1
+        while ali_budget>=guess and bashir_budget>=guess:
+            if ali_budget%guess==0 and bashir_budget%guess==0:
+>               ali_budget = a//guess
+E               NameError: name 'a' is not defined
+
+a03.py:9: NameError
+____________________________ test_chocolatePrice_3 _____________________________
+
+    def test_chocolatePrice_3():
+>       assert chocolatePrice(30, 12) == 6
+
+test_student.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ali_budget = 30, bashir_budget = 12
+
+    def chocolatePrice(ali_budget,bashir_budget):
+        guess = 2
+        counter = 1
+        while ali_budget>=guess and bashir_budget>=guess:
+            if ali_budget%guess==0 and bashir_budget%guess==0:
+>               ali_budget = a//guess
+E               NameError: name 'a' is not defined
+
+a03.py:9: NameError
+____________________________ test_chocolatePrice_4 _____________________________
+
+    def test_chocolatePrice_4():
+>       assert chocolatePrice(50, 10) == 10
+
+test_student.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ali_budget = 50, bashir_budget = 10
+
+    def chocolatePrice(ali_budget,bashir_budget):
+        guess = 2
+        counter = 1
+        while ali_budget>=guess and bashir_budget>=guess:
+            if ali_budget%guess==0 and bashir_budget%guess==0:
+>               ali_budget = a//guess
+E               NameError: name 'a' is not defined
+
+a03.py:9: NameError
+=========================== short test summary info ============================
+FAILED test_student.py::test_chocolatePrice_1 - NameError: name 'a' is not de...
+FAILED test_student.py::test_chocolatePrice_2 - NameError: name 'a' is not de...
+FAILED test_student.py::test_chocolatePrice_3 - NameError: name 'a' is not de...
+FAILED test_student.py::test_chocolatePrice_4 - NameError: name 'a' is not de...
+========================= 4 failed, 6 passed in 0.08s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment2
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 10 items
+
+test_student.py ..........                                               [100%]
+
+============================== 10 passed in 0.02s ==============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment2
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 10 items
+
+test_student.py ..........                                               [100%]
+
+============================== 10 passed in 0.03s ==============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment2
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 10 items
+
+test_student.py ..........                                               [100%]
+
+============================== 10 passed in 0.03s ==============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment2
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 10 items
+
+test_student.py ..........                                               [100%]
+
+============================== 10 passed in 0.02s ==============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment2
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 10 items
+
+test_student.py ..........                                               [100%]
+
+============================== 10 passed in 0.02s ==============================

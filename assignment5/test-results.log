@@ -1,0 +1,269 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment5
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 4 items
+
+test_student.py F.FF                                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_text_count_s_1 ______________________________
+
+    def test_text_count_s_1():
+>       assert text_count('.', 'essay.txt') == 455
+E       AssertionError: assert 454 == 455
+E        +  where 454 = text_count('.', 'essay.txt')
+
+test_student.py:12: AssertionError
+_____________________________ test_text_count_s_5 ______________________________
+
+    def test_text_count_s_5():
+>       assert text_count('.', 'essay.txt', False, True) == 2632
+E       AssertionError: assert 2178 == 2632
+E        +  where 2178 = text_count('.', 'essay.txt', False, True)
+
+test_student.py:18: AssertionError
+_____________________________ test_copy_lines_s_2 ______________________________
+
+    def test_copy_lines_s_2():
+        copy_lines('essay.txt', 'out.txt', 1)
+        with open('out.txt', 'r') as f:
+>           assert f.read() == """Write a title that summarizes the specific problem"""
+E           AssertionError: assert 'Write a titl...fic problem\n' == 'Write a titl...cific problem'
+E             Skipping 39 identical leading characters in diff, use -v to show
+E             - fic problem
+E             + fic problem
+E             ?            +
+
+test_student.py:23: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_text_count_s_1 - AssertionError: assert 454 == 455
+FAILED test_student.py::test_text_count_s_5 - AssertionError: assert 2178 == ...
+FAILED test_student.py::test_copy_lines_s_2 - AssertionError: assert 'Write a...
+========================= 3 failed, 1 passed in 0.05s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment5
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 4 items
+
+test_student.py F.F.                                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_text_count_s_1 ______________________________
+
+    def test_text_count_s_1():
+>       assert text_count('.', 'essay.txt') == 455
+E       AssertionError: assert 454 == 455
+E        +  where 454 = text_count('.', 'essay.txt')
+
+test_student.py:12: AssertionError
+_____________________________ test_text_count_s_5 ______________________________
+
+    def test_text_count_s_5():
+>       assert text_count('.', 'essay.txt', False, True) == 2632
+E       AssertionError: assert 2178 == 2632
+E        +  where 2178 = text_count('.', 'essay.txt', False, True)
+
+test_student.py:18: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_text_count_s_1 - AssertionError: assert 454 == 455
+FAILED test_student.py::test_text_count_s_5 - AssertionError: assert 2178 == ...
+========================= 2 failed, 2 passed in 0.07s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment5
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 4 items
+
+test_student.py F.F.                                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_text_count_s_1 ______________________________
+
+    def test_text_count_s_1():
+>       assert text_count('.', 'essay.txt') == 455
+E       AssertionError: assert 454 == 455
+E        +  where 454 = text_count('.', 'essay.txt')
+
+test_student.py:12: AssertionError
+_____________________________ test_text_count_s_5 ______________________________
+
+    def test_text_count_s_5():
+>       assert text_count('.', 'essay.txt', False, True) == 2632
+E       AssertionError: assert 2601 == 2632
+E        +  where 2601 = text_count('.', 'essay.txt', False, True)
+
+test_student.py:18: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_text_count_s_1 - AssertionError: assert 454 == 455
+FAILED test_student.py::test_text_count_s_5 - AssertionError: assert 2601 == ...
+========================= 2 failed, 2 passed in 0.07s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment5
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 4 items
+
+test_student.py F...                                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_text_count_s_1 ______________________________
+
+    def test_text_count_s_1():
+>       assert text_count('.', 'essay.txt') == 455
+E       AssertionError: assert 454 == 455
+E        +  where 454 = text_count('.', 'essay.txt')
+
+test_student.py:12: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_text_count_s_1 - AssertionError: assert 454 == 455
+========================= 1 failed, 3 passed in 0.06s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment5
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 4 items
+
+test_student.py F...                                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_text_count_s_1 ______________________________
+
+    def test_text_count_s_1():
+>       assert text_count('.', 'essay.txt') == 455
+E       AssertionError: assert 62 == 455
+E        +  where 62 = text_count('.', 'essay.txt')
+
+test_student.py:12: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_text_count_s_1 - AssertionError: assert 62 == 455
+========================= 1 failed, 3 passed in 0.04s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment5
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 4 items
+
+test_student.py F...                                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_text_count_s_1 ______________________________
+
+    def test_text_count_s_1():
+>       assert text_count('.', 'essay.txt') == 455
+
+test_student.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+directory = '.', filename = 'essay.txt', c = False, d = False
+
+    def text_count(directory,filename,c = False,d = False):
+        if d:
+            a = os.path.join(directory,filename)
+            f = open(a,"r")
+            length = 0
+            for line in f:
+                length += len(line)
+            return length
+        if c == False:
+            a = os.path.join(directory,filename)
+            f = open(a,"r")
+            length = 0
+            for line in f:
+                line = line.split("\n")
+>               l_st = line.split(" ")
+E               AttributeError: 'list' object has no attribute 'split'
+
+a06.py:22: AttributeError
+=========================== short test summary info ============================
+FAILED test_student.py::test_text_count_s_1 - AttributeError: 'list' object h...
+========================= 1 failed, 3 passed in 0.04s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment5
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 4 items
+
+test_student.py F...                                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_text_count_s_1 ______________________________
+
+    def test_text_count_s_1():
+>       assert text_count('.', 'essay.txt') == 455
+E       AssertionError: assert 454 == 455
+E        +  where 454 = text_count('.', 'essay.txt')
+
+test_student.py:12: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_text_count_s_1 - AssertionError: assert 454 == 455
+========================= 1 failed, 3 passed in 0.04s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment5
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 4 items
+
+test_student.py F...                                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_text_count_s_1 ______________________________
+
+    def test_text_count_s_1():
+>       assert text_count('.', 'essay.txt') == 455
+E       AssertionError: assert 454 == 455
+E        +  where 454 = text_count('.', 'essay.txt')
+
+test_student.py:12: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_text_count_s_1 - AssertionError: assert 454 == 455
+========================= 1 failed, 3 passed in 0.05s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment5
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 4 items
+
+test_student.py ....                                                     [100%]
+
+============================== 4 passed in 0.02s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment5
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 4 items
+
+test_student.py ....                                                     [100%]
+
+============================== 4 passed in 0.02s ===============================

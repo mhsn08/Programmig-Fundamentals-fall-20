@@ -1,0 +1,3723 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..FFFFFFFF.....FFFFF                                     [100%]
+
+=================================== FAILURES ===================================
+_______________________ test_calculateTiles_zero_check_1 _______________________
+
+    def test_calculateTiles_zero_check_1():
+>       assert calculateTiles(2, 3, 4, 0) == None
+
+test_student.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:31: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == "True":
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 2, plot_length = 3, tile_width = 4, tile_length = 0
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+>       if (plot_width%tile_width and plot_length%tile_length)==0:
+E       ZeroDivisionError: integer division or modulo by zero
+
+a02.py:13: ZeroDivisionError
+_______________________ test_calculateTiles_zero_check_2 _______________________
+
+    def test_calculateTiles_zero_check_2():
+>       assert calculateTiles(2, 3, 0, 4) == None
+
+test_student.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:31: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == "True":
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 2, plot_length = 3, tile_width = 0, tile_length = 4
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+>       if (plot_width%tile_width and plot_length%tile_length)==0:
+E       ZeroDivisionError: integer division or modulo by zero
+
+a02.py:13: ZeroDivisionError
+_______________________ test_calculateTiles_zero_check_3 _______________________
+
+    def test_calculateTiles_zero_check_3():
+>       assert calculateTiles(2, 0, 1, 2) == None
+E       assert 0.0 == None
+E        +  where 0.0 = calculateTiles(2, 0, 1, 2)
+
+test_student.py:18: AssertionError
+_______________________ test_calculateTiles_zero_check_4 _______________________
+
+    def test_calculateTiles_zero_check_4():
+>       assert calculateTiles(0, 1, 2, 3) == None
+E       assert 0.0 == None
+E        +  where 0.0 = calculateTiles(0, 1, 2, 3)
+
+test_student.py:21: AssertionError
+______________________ test_calculateTiles_zero_check_all ______________________
+
+    def test_calculateTiles_zero_check_all():
+>       assert calculateTiles(0, 0, 0, 0) == None
+E       AssertionError: assert 'None' == None
+E        +  where 'None' = calculateTiles(0, 0, 0, 0)
+
+test_student.py:24: AssertionError
+_______________________ test_calculateTiles_str_check_1 ________________________
+
+    def test_calculateTiles_str_check_1():
+>       assert calculateTiles(2, 3, "4", 1) == "Invalid Input"
+
+test_student.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:31: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == "True":
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 2, plot_length = 3, tile_width = '4', tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+>       if (plot_width%tile_width and plot_length%tile_length)==0:
+E       TypeError: unsupported operand type(s) for %: 'int' and 'str'
+
+a02.py:13: TypeError
+_______________________ test_calculateTiles_str_check_2 ________________________
+
+    def test_calculateTiles_str_check_2():
+>       assert calculateTiles(2, 3, 1, "2") == "Invalid Input"
+
+test_student.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 2, plot_length = 3, tile_width = 1, tile_length = '2'
+
+    def calculateTiles(plot_width, plot_length, tile_width, tile_length):
+        if type(plot_width or plot_length or tile_width or tile_length) == str:
+            return "Invalid Input"
+        elif (plot_width or plot_length or tile_width or tile_length) == 0:
+            return "None"
+        else :
+            if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == "True":
+                aP = calculateArea(plot_width, plot_length)
+                aT = calculateArea(tile_width, tile_length)
+>               return aP/aT
+E               TypeError: unsupported operand type(s) for /: 'int' and 'str'
+
+a02.py:34: TypeError
+_______________________ test_calculateTiles_str_check_3 ________________________
+
+    def test_calculateTiles_str_check_3():
+>       assert calculateTiles(2, "3", 1, 2) == "Invalid Input"
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 2, plot_length = '3', tile_width = 1, tile_length = 2
+
+    def calculateTiles(plot_width, plot_length, tile_width, tile_length):
+        if type(plot_width or plot_length or tile_width or tile_length) == str:
+            return "Invalid Input"
+        elif (plot_width or plot_length or tile_width or tile_length) == 0:
+            return "None"
+        else :
+            if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == "True":
+                aP = calculateArea(plot_width, plot_length)
+                aT = calculateArea(tile_width, tile_length)
+>               return aP/aT
+E               TypeError: unsupported operand type(s) for /: 'str' and 'int'
+
+a02.py:34: TypeError
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+E       AssertionError: assert 4.5 == 'Not Possible'
+E        +  where 4.5 = calculateTiles(3, 3, 2, 1)
+
+test_student.py:53: AssertionError
+_____________________________ test_checkTilesFit_1 _____________________________
+
+    def test_checkTilesFit_1():
+>       assert checkTilesFit(4, 3, 2, 1) == True
+E       AssertionError: assert 'True' == True
+E        +  where 'True' = checkTilesFit(4, 3, 2, 1)
+
+test_student.py:57: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       AssertionError: assert 'True' == False
+E        +  where 'True' = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       AssertionError: assert 'True' == False
+E        +  where 'True' = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       AssertionError: assert 'True' == True
+E        +  where 'True' = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_zero_check_1 - ZeroDivisionError:...
+FAILED test_student.py::test_calculateTiles_zero_check_2 - ZeroDivisionError:...
+FAILED test_student.py::test_calculateTiles_zero_check_3 - assert 0.0 == None
+FAILED test_student.py::test_calculateTiles_zero_check_4 - assert 0.0 == None
+FAILED test_student.py::test_calculateTiles_zero_check_all - AssertionError: ...
+FAILED test_student.py::test_calculateTiles_str_check_1 - TypeError: unsuppor...
+FAILED test_student.py::test_calculateTiles_str_check_2 - TypeError: unsuppor...
+FAILED test_student.py::test_calculateTiles_str_check_3 - TypeError: unsuppor...
+FAILED test_student.py::test_calculateTiles_4 - AssertionError: assert 4.5 ==...
+FAILED test_student.py::test_checkTilesFit_1 - AssertionError: assert 'True' ...
+FAILED test_student.py::test_checkTilesFit_2 - AssertionError: assert 'True' ...
+FAILED test_student.py::test_checkTilesFit_3 - AssertionError: assert 'True' ...
+FAILED test_student.py::test_checkTilesFit_4 - AssertionError: assert 'True' ...
+========================= 13 failed, 7 passed in 0.10s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..FFFFFFFF.....FFFFF                                     [100%]
+
+=================================== FAILURES ===================================
+_______________________ test_calculateTiles_zero_check_1 _______________________
+
+    def test_calculateTiles_zero_check_1():
+>       assert calculateTiles(2, 3, 4, 0) == None
+
+test_student.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:31: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == "True":
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 2, plot_length = 3, tile_width = 4, tile_length = 0
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+>       if (plot_width%tile_width and plot_length%tile_length)==0:
+E       ZeroDivisionError: integer division or modulo by zero
+
+a02.py:13: ZeroDivisionError
+_______________________ test_calculateTiles_zero_check_2 _______________________
+
+    def test_calculateTiles_zero_check_2():
+>       assert calculateTiles(2, 3, 0, 4) == None
+
+test_student.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:31: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == "True":
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 2, plot_length = 3, tile_width = 0, tile_length = 4
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+>       if (plot_width%tile_width and plot_length%tile_length)==0:
+E       ZeroDivisionError: integer division or modulo by zero
+
+a02.py:13: ZeroDivisionError
+_______________________ test_calculateTiles_zero_check_3 _______________________
+
+    def test_calculateTiles_zero_check_3():
+>       assert calculateTiles(2, 0, 1, 2) == None
+E       assert 0.0 == None
+E        +  where 0.0 = calculateTiles(2, 0, 1, 2)
+
+test_student.py:18: AssertionError
+_______________________ test_calculateTiles_zero_check_4 _______________________
+
+    def test_calculateTiles_zero_check_4():
+>       assert calculateTiles(0, 1, 2, 3) == None
+E       assert 0.0 == None
+E        +  where 0.0 = calculateTiles(0, 1, 2, 3)
+
+test_student.py:21: AssertionError
+______________________ test_calculateTiles_zero_check_all ______________________
+
+    def test_calculateTiles_zero_check_all():
+>       assert calculateTiles(0, 0, 0, 0) == None
+E       AssertionError: assert 'None' == None
+E        +  where 'None' = calculateTiles(0, 0, 0, 0)
+
+test_student.py:24: AssertionError
+_______________________ test_calculateTiles_str_check_1 ________________________
+
+    def test_calculateTiles_str_check_1():
+>       assert calculateTiles(2, 3, "4", 1) == "Invalid Input"
+
+test_student.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:31: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == "True":
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 2, plot_length = 3, tile_width = '4', tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+>       if (plot_width%tile_width and plot_length%tile_length)==0:
+E       TypeError: unsupported operand type(s) for %: 'int' and 'str'
+
+a02.py:13: TypeError
+_______________________ test_calculateTiles_str_check_2 ________________________
+
+    def test_calculateTiles_str_check_2():
+>       assert calculateTiles(2, 3, 1, "2") == "Invalid Input"
+
+test_student.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 2, plot_length = 3, tile_width = 1, tile_length = '2'
+
+    def calculateTiles(plot_width, plot_length, tile_width, tile_length):
+        if type(plot_width or plot_length or tile_width or tile_length) == str:
+            return "Invalid Input"
+        elif (plot_width or plot_length or tile_width or tile_length) == 0:
+            return "None"
+        else :
+            if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == "True":
+                aP = plot_width*plot_length
+                aT = tile_width*tile_length
+>               return aP/aT
+E               TypeError: unsupported operand type(s) for /: 'int' and 'str'
+
+a02.py:34: TypeError
+_______________________ test_calculateTiles_str_check_3 ________________________
+
+    def test_calculateTiles_str_check_3():
+>       assert calculateTiles(2, "3", 1, 2) == "Invalid Input"
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 2, plot_length = '3', tile_width = 1, tile_length = 2
+
+    def calculateTiles(plot_width, plot_length, tile_width, tile_length):
+        if type(plot_width or plot_length or tile_width or tile_length) == str:
+            return "Invalid Input"
+        elif (plot_width or plot_length or tile_width or tile_length) == 0:
+            return "None"
+        else :
+            if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == "True":
+                aP = plot_width*plot_length
+                aT = tile_width*tile_length
+>               return aP/aT
+E               TypeError: unsupported operand type(s) for /: 'str' and 'int'
+
+a02.py:34: TypeError
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+E       AssertionError: assert 4.5 == 'Not Possible'
+E        +  where 4.5 = calculateTiles(3, 3, 2, 1)
+
+test_student.py:53: AssertionError
+_____________________________ test_checkTilesFit_1 _____________________________
+
+    def test_checkTilesFit_1():
+>       assert checkTilesFit(4, 3, 2, 1) == True
+E       AssertionError: assert 'True' == True
+E        +  where 'True' = checkTilesFit(4, 3, 2, 1)
+
+test_student.py:57: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       AssertionError: assert 'True' == False
+E        +  where 'True' = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       AssertionError: assert 'True' == False
+E        +  where 'True' = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       AssertionError: assert 'True' == True
+E        +  where 'True' = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_zero_check_1 - ZeroDivisionError:...
+FAILED test_student.py::test_calculateTiles_zero_check_2 - ZeroDivisionError:...
+FAILED test_student.py::test_calculateTiles_zero_check_3 - assert 0.0 == None
+FAILED test_student.py::test_calculateTiles_zero_check_4 - assert 0.0 == None
+FAILED test_student.py::test_calculateTiles_zero_check_all - AssertionError: ...
+FAILED test_student.py::test_calculateTiles_str_check_1 - TypeError: unsuppor...
+FAILED test_student.py::test_calculateTiles_str_check_2 - TypeError: unsuppor...
+FAILED test_student.py::test_calculateTiles_str_check_3 - TypeError: unsuppor...
+FAILED test_student.py::test_calculateTiles_4 - AssertionError: assert 4.5 ==...
+FAILED test_student.py::test_checkTilesFit_1 - AssertionError: assert 'True' ...
+FAILED test_student.py::test_checkTilesFit_2 - AssertionError: assert 'True' ...
+FAILED test_student.py::test_checkTilesFit_3 - AssertionError: assert 'True' ...
+FAILED test_student.py::test_checkTilesFit_4 - AssertionError: assert 'True' ...
+========================= 13 failed, 7 passed in 0.09s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..FFFFFFFF.....FFFFF                                     [100%]
+
+=================================== FAILURES ===================================
+_______________________ test_calculateTiles_zero_check_1 _______________________
+
+    def test_calculateTiles_zero_check_1():
+>       assert calculateTiles(2, 3, 4, 0) == None
+
+test_student.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:31: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == "True":
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 2, plot_length = 3, tile_width = 4, tile_length = 0
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+>       if (plot_width%tile_width and plot_length%tile_length)==0:
+E       ZeroDivisionError: integer division or modulo by zero
+
+a02.py:13: ZeroDivisionError
+_______________________ test_calculateTiles_zero_check_2 _______________________
+
+    def test_calculateTiles_zero_check_2():
+>       assert calculateTiles(2, 3, 0, 4) == None
+
+test_student.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:31: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == "True":
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 2, plot_length = 3, tile_width = 0, tile_length = 4
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+>       if (plot_width%tile_width and plot_length%tile_length)==0:
+E       ZeroDivisionError: integer division or modulo by zero
+
+a02.py:13: ZeroDivisionError
+_______________________ test_calculateTiles_zero_check_3 _______________________
+
+    def test_calculateTiles_zero_check_3():
+>       assert calculateTiles(2, 0, 1, 2) == None
+E       assert 0 == None
+E        +  where 0 = calculateTiles(2, 0, 1, 2)
+
+test_student.py:18: AssertionError
+_______________________ test_calculateTiles_zero_check_4 _______________________
+
+    def test_calculateTiles_zero_check_4():
+>       assert calculateTiles(0, 1, 2, 3) == None
+E       assert 0 == None
+E        +  where 0 = calculateTiles(0, 1, 2, 3)
+
+test_student.py:21: AssertionError
+______________________ test_calculateTiles_zero_check_all ______________________
+
+    def test_calculateTiles_zero_check_all():
+>       assert calculateTiles(0, 0, 0, 0) == None
+E       AssertionError: assert 'None' == None
+E        +  where 'None' = calculateTiles(0, 0, 0, 0)
+
+test_student.py:24: AssertionError
+_______________________ test_calculateTiles_str_check_1 ________________________
+
+    def test_calculateTiles_str_check_1():
+>       assert calculateTiles(2, 3, "4", 1) == "Invalid Input"
+
+test_student.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:31: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == "True":
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 2, plot_length = 3, tile_width = '4', tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+>       if (plot_width%tile_width and plot_length%tile_length)==0:
+E       TypeError: unsupported operand type(s) for %: 'int' and 'str'
+
+a02.py:13: TypeError
+_______________________ test_calculateTiles_str_check_2 ________________________
+
+    def test_calculateTiles_str_check_2():
+>       assert calculateTiles(2, 3, 1, "2") == "Invalid Input"
+
+test_student.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 2, plot_length = 3, tile_width = 1, tile_length = '2'
+
+    def calculateTiles(plot_width, plot_length, tile_width, tile_length):
+        if type(plot_width or plot_length or tile_width or tile_length) == str:
+            return "Invalid Input"
+        elif (plot_width or plot_length or tile_width or tile_length) == 0:
+            return "None"
+        else :
+            if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == "True":
+                aP = plot_width*plot_length
+                aT = tile_width*tile_length
+>               return round (aP/aT)
+E               TypeError: unsupported operand type(s) for /: 'int' and 'str'
+
+a02.py:34: TypeError
+_______________________ test_calculateTiles_str_check_3 ________________________
+
+    def test_calculateTiles_str_check_3():
+>       assert calculateTiles(2, "3", 1, 2) == "Invalid Input"
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 2, plot_length = '3', tile_width = 1, tile_length = 2
+
+    def calculateTiles(plot_width, plot_length, tile_width, tile_length):
+        if type(plot_width or plot_length or tile_width or tile_length) == str:
+            return "Invalid Input"
+        elif (plot_width or plot_length or tile_width or tile_length) == 0:
+            return "None"
+        else :
+            if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == "True":
+                aP = plot_width*plot_length
+                aT = tile_width*tile_length
+>               return round (aP/aT)
+E               TypeError: unsupported operand type(s) for /: 'str' and 'int'
+
+a02.py:34: TypeError
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+E       AssertionError: assert 4 == 'Not Possible'
+E        +  where 4 = calculateTiles(3, 3, 2, 1)
+
+test_student.py:53: AssertionError
+_____________________________ test_checkTilesFit_1 _____________________________
+
+    def test_checkTilesFit_1():
+>       assert checkTilesFit(4, 3, 2, 1) == True
+E       AssertionError: assert 'True' == True
+E        +  where 'True' = checkTilesFit(4, 3, 2, 1)
+
+test_student.py:57: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       AssertionError: assert 'True' == False
+E        +  where 'True' = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       AssertionError: assert 'True' == False
+E        +  where 'True' = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       AssertionError: assert 'True' == True
+E        +  where 'True' = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_zero_check_1 - ZeroDivisionError:...
+FAILED test_student.py::test_calculateTiles_zero_check_2 - ZeroDivisionError:...
+FAILED test_student.py::test_calculateTiles_zero_check_3 - assert 0 == None
+FAILED test_student.py::test_calculateTiles_zero_check_4 - assert 0 == None
+FAILED test_student.py::test_calculateTiles_zero_check_all - AssertionError: ...
+FAILED test_student.py::test_calculateTiles_str_check_1 - TypeError: unsuppor...
+FAILED test_student.py::test_calculateTiles_str_check_2 - TypeError: unsuppor...
+FAILED test_student.py::test_calculateTiles_str_check_3 - TypeError: unsuppor...
+FAILED test_student.py::test_calculateTiles_4 - AssertionError: assert 4 == '...
+FAILED test_student.py::test_checkTilesFit_1 - AssertionError: assert 'True' ...
+FAILED test_student.py::test_checkTilesFit_2 - AssertionError: assert 'True' ...
+FAILED test_student.py::test_checkTilesFit_3 - AssertionError: assert 'True' ...
+FAILED test_student.py::test_checkTilesFit_4 - AssertionError: assert 'True' ...
+========================= 13 failed, 7 passed in 0.12s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..FFFFF.....FFFFFFFF                                     [100%]
+
+=================================== FAILURES ===================================
+_______________________ test_calculateTiles_zero_check_1 _______________________
+
+    def test_calculateTiles_zero_check_1():
+>       assert calculateTiles(2, 3, 4, 0) == None
+E       AssertionError: assert 'Invalid Input' == None
+E        +  where 'Invalid Input' = calculateTiles(2, 3, 4, 0)
+
+test_student.py:12: AssertionError
+_______________________ test_calculateTiles_zero_check_2 _______________________
+
+    def test_calculateTiles_zero_check_2():
+>       assert calculateTiles(2, 3, 0, 4) == None
+E       AssertionError: assert 'Invalid Input' == None
+E        +  where 'Invalid Input' = calculateTiles(2, 3, 0, 4)
+
+test_student.py:15: AssertionError
+_______________________ test_calculateTiles_zero_check_3 _______________________
+
+    def test_calculateTiles_zero_check_3():
+>       assert calculateTiles(2, 0, 1, 2) == None
+E       AssertionError: assert 'Invalid Input' == None
+E        +  where 'Invalid Input' = calculateTiles(2, 0, 1, 2)
+
+test_student.py:18: AssertionError
+_______________________ test_calculateTiles_zero_check_4 _______________________
+
+    def test_calculateTiles_zero_check_4():
+>       assert calculateTiles(0, 1, 2, 3) == None
+E       AssertionError: assert 'Invalid Input' == None
+E        +  where 'Invalid Input' = calculateTiles(0, 1, 2, 3)
+
+test_student.py:21: AssertionError
+______________________ test_calculateTiles_zero_check_all ______________________
+
+    def test_calculateTiles_zero_check_all():
+>       assert calculateTiles(0, 0, 0, 0) == None
+E       AssertionError: assert 'Invalid Input' == None
+E        +  where 'Invalid Input' = calculateTiles(0, 0, 0, 0)
+
+test_student.py:24: AssertionError
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Invalid Input' == 6
+E        +  where 'Invalid Input' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_2 _____________________________
+
+    def test_calculateTiles_2():
+>       assert calculateTiles(4, 3, 2, 1) == 6
+E       AssertionError: assert 'Invalid Input' == 6
+E        +  where 'Invalid Input' = calculateTiles(4, 3, 2, 1)
+
+test_student.py:46: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Invalid Input' == 1
+E        +  where 'Invalid Input' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+E       AssertionError: assert 'Invalid Input' == 'Not Possible'
+E         - Not Possible
+E         + Invalid Input
+
+test_student.py:53: AssertionError
+_____________________________ test_checkTilesFit_1 _____________________________
+
+    def test_checkTilesFit_1():
+>       assert checkTilesFit(4, 3, 2, 1) == True
+E       AssertionError: assert 'True' == True
+E        +  where 'True' = checkTilesFit(4, 3, 2, 1)
+
+test_student.py:57: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       AssertionError: assert 'True' == False
+E        +  where 'True' = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       AssertionError: assert 'True' == False
+E        +  where 'True' = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       AssertionError: assert 'True' == True
+E        +  where 'True' = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_zero_check_1 - AssertionError: as...
+FAILED test_student.py::test_calculateTiles_zero_check_2 - AssertionError: as...
+FAILED test_student.py::test_calculateTiles_zero_check_3 - AssertionError: as...
+FAILED test_student.py::test_calculateTiles_zero_check_4 - AssertionError: as...
+FAILED test_student.py::test_calculateTiles_zero_check_all - AssertionError: ...
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Inval...
+FAILED test_student.py::test_calculateTiles_2 - AssertionError: assert 'Inval...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Inval...
+FAILED test_student.py::test_calculateTiles_4 - AssertionError: assert 'Inval...
+FAILED test_student.py::test_checkTilesFit_1 - AssertionError: assert 'True' ...
+FAILED test_student.py::test_checkTilesFit_2 - AssertionError: assert 'True' ...
+FAILED test_student.py::test_checkTilesFit_3 - AssertionError: assert 'True' ...
+FAILED test_student.py::test_checkTilesFit_4 - AssertionError: assert 'True' ...
+========================= 13 failed, 7 passed in 0.11s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..FFFFF........FFFFF                                     [100%]
+
+=================================== FAILURES ===================================
+_______________________ test_calculateTiles_zero_check_1 _______________________
+
+    def test_calculateTiles_zero_check_1():
+>       assert calculateTiles(2, 3, 4, 0) == None
+E       AssertionError: assert 'None' == None
+E        +  where 'None' = calculateTiles(2, 3, 4, 0)
+
+test_student.py:12: AssertionError
+_______________________ test_calculateTiles_zero_check_2 _______________________
+
+    def test_calculateTiles_zero_check_2():
+>       assert calculateTiles(2, 3, 0, 4) == None
+E       AssertionError: assert 'None' == None
+E        +  where 'None' = calculateTiles(2, 3, 0, 4)
+
+test_student.py:15: AssertionError
+_______________________ test_calculateTiles_zero_check_3 _______________________
+
+    def test_calculateTiles_zero_check_3():
+>       assert calculateTiles(2, 0, 1, 2) == None
+E       AssertionError: assert 'None' == None
+E        +  where 'None' = calculateTiles(2, 0, 1, 2)
+
+test_student.py:18: AssertionError
+_______________________ test_calculateTiles_zero_check_4 _______________________
+
+    def test_calculateTiles_zero_check_4():
+>       assert calculateTiles(0, 1, 2, 3) == None
+E       AssertionError: assert 'None' == None
+E        +  where 'None' = calculateTiles(0, 1, 2, 3)
+
+test_student.py:21: AssertionError
+______________________ test_calculateTiles_zero_check_all ______________________
+
+    def test_calculateTiles_zero_check_all():
+>       assert calculateTiles(0, 0, 0, 0) == None
+E       AssertionError: assert 'None' == None
+E        +  where 'None' = calculateTiles(0, 0, 0, 0)
+
+test_student.py:24: AssertionError
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+E       AssertionError: assert 4 == 'Not Possible'
+E        +  where 4 = calculateTiles(3, 3, 2, 1)
+
+test_student.py:53: AssertionError
+_____________________________ test_checkTilesFit_1 _____________________________
+
+    def test_checkTilesFit_1():
+>       assert checkTilesFit(4, 3, 2, 1) == True
+E       AssertionError: assert 'True' == True
+E        +  where 'True' = checkTilesFit(4, 3, 2, 1)
+
+test_student.py:57: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       AssertionError: assert 'True' == False
+E        +  where 'True' = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       AssertionError: assert 'True' == False
+E        +  where 'True' = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       AssertionError: assert 'True' == True
+E        +  where 'True' = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_zero_check_1 - AssertionError: as...
+FAILED test_student.py::test_calculateTiles_zero_check_2 - AssertionError: as...
+FAILED test_student.py::test_calculateTiles_zero_check_3 - AssertionError: as...
+FAILED test_student.py::test_calculateTiles_zero_check_4 - AssertionError: as...
+FAILED test_student.py::test_calculateTiles_zero_check_all - AssertionError: ...
+FAILED test_student.py::test_calculateTiles_4 - AssertionError: assert 4 == '...
+FAILED test_student.py::test_checkTilesFit_1 - AssertionError: assert 'True' ...
+FAILED test_student.py::test_checkTilesFit_2 - AssertionError: assert 'True' ...
+FAILED test_student.py::test_checkTilesFit_3 - AssertionError: assert 'True' ...
+FAILED test_student.py::test_checkTilesFit_4 - AssertionError: assert 'True' ...
+======================== 10 failed, 10 passed in 0.08s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..FFFFF........F.FF.                                     [100%]
+
+=================================== FAILURES ===================================
+_______________________ test_calculateTiles_zero_check_1 _______________________
+
+    def test_calculateTiles_zero_check_1():
+>       assert calculateTiles(2, 3, 4, 0) == None
+E       AssertionError: assert 'None' == None
+E        +  where 'None' = calculateTiles(2, 3, 4, 0)
+
+test_student.py:12: AssertionError
+_______________________ test_calculateTiles_zero_check_2 _______________________
+
+    def test_calculateTiles_zero_check_2():
+>       assert calculateTiles(2, 3, 0, 4) == None
+E       AssertionError: assert 'None' == None
+E        +  where 'None' = calculateTiles(2, 3, 0, 4)
+
+test_student.py:15: AssertionError
+_______________________ test_calculateTiles_zero_check_3 _______________________
+
+    def test_calculateTiles_zero_check_3():
+>       assert calculateTiles(2, 0, 1, 2) == None
+E       AssertionError: assert 'None' == None
+E        +  where 'None' = calculateTiles(2, 0, 1, 2)
+
+test_student.py:18: AssertionError
+_______________________ test_calculateTiles_zero_check_4 _______________________
+
+    def test_calculateTiles_zero_check_4():
+>       assert calculateTiles(0, 1, 2, 3) == None
+E       AssertionError: assert 'None' == None
+E        +  where 'None' = calculateTiles(0, 1, 2, 3)
+
+test_student.py:21: AssertionError
+______________________ test_calculateTiles_zero_check_all ______________________
+
+    def test_calculateTiles_zero_check_all():
+>       assert calculateTiles(0, 0, 0, 0) == None
+E       AssertionError: assert 'None' == None
+E        +  where 'None' = calculateTiles(0, 0, 0, 0)
+
+test_student.py:24: AssertionError
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+E       AssertionError: assert 4 == 'Not Possible'
+E        +  where 4 = calculateTiles(3, 3, 2, 1)
+
+test_student.py:53: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       assert True == False
+E        +  where True = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_zero_check_1 - AssertionError: as...
+FAILED test_student.py::test_calculateTiles_zero_check_2 - AssertionError: as...
+FAILED test_student.py::test_calculateTiles_zero_check_3 - AssertionError: as...
+FAILED test_student.py::test_calculateTiles_zero_check_4 - AssertionError: as...
+FAILED test_student.py::test_calculateTiles_zero_check_all - AssertionError: ...
+FAILED test_student.py::test_calculateTiles_4 - AssertionError: assert 4 == '...
+FAILED test_student.py::test_checkTilesFit_2 - assert True == False
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 8 failed, 12 passed in 0.07s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ...............F.FF.                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+E       AssertionError: assert 4 == 'Not Possible'
+E        +  where 4 = calculateTiles(3, 3, 2, 1)
+
+test_student.py:53: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       assert True == False
+E        +  where True = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_4 - AssertionError: assert 4 == '...
+FAILED test_student.py::test_checkTilesFit_2 - assert True == False
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 3 failed, 17 passed in 0.08s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_______________________ ERROR collecting test_student.py _______________________
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/python.py:511: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/hassan/anaconda3/lib/python3.8/site-packages/py/_path/local.py:704: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:991: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:975: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:671: in _load_unlocked
+    ???
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+test_student.py:1: in <module>
+    from a02 import calculateArea
+E     File "/home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment/a02.py", line 27
+E       return Invalid Input
+E                      ^
+E   SyntaxError: invalid syntax
+=========================== short test summary info ============================
+ERROR test_student.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.20s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ...............F.FF.                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+E       AssertionError: assert 4 == 'Not Possible'
+E        +  where 4 = calculateTiles(3, 3, 2, 1)
+
+test_student.py:53: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       assert True == False
+E        +  where True = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_4 - AssertionError: assert 4 == '...
+FAILED test_student.py::test_checkTilesFit_2 - assert True == False
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 3 failed, 17 passed in 0.07s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ...............F.FF.                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+E       AssertionError: assert 4 == 'Not Possible'
+E        +  where 4 = calculateTiles(3, 3, 2, 1)
+
+test_student.py:53: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       assert True == False
+E        +  where True = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_4 - AssertionError: assert 4 == '...
+FAILED test_student.py::test_checkTilesFit_2 - assert True == False
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 3 failed, 17 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ...............F.FF.                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+E       AssertionError: assert 4 == 'Not Possible'
+E        +  where 4 = calculateTiles(3, 3, 2, 1)
+
+test_student.py:53: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       assert True == False
+E        +  where True = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_4 - AssertionError: assert 4 == '...
+FAILED test_student.py::test_checkTilesFit_2 - assert True == False
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 3 failed, 17 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.10s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ...............F.FF.                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+E       AssertionError: assert 4 == 'Not Possible'
+E        +  where 4 = calculateTiles(3, 3, 2, 1)
+
+test_student.py:53: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       assert True == False
+E        +  where True = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_4 - AssertionError: assert 4 == '...
+FAILED test_student.py::test_checkTilesFit_2 - assert True == False
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 3 failed, 17 passed in 0.07s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..................F.                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 1 failed, 19 passed in 0.08s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ...............F.FF.                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+E       AssertionError: assert 4 == 'Not Possible'
+E        +  where 4 = calculateTiles(3, 3, 2, 1)
+
+test_student.py:53: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       assert True == False
+E        +  where True = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_4 - AssertionError: assert 4 == '...
+FAILED test_student.py::test_checkTilesFit_2 - assert True == False
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 3 failed, 17 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ...............F.FF.                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+E       AssertionError: assert 4 == 'Not Possible'
+E        +  where 4 = calculateTiles(3, 3, 2, 1)
+
+test_student.py:53: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       assert True == False
+E        +  where True = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_4 - AssertionError: assert 4 == '...
+FAILED test_student.py::test_checkTilesFit_2 - assert True == False
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 3 failed, 17 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..................F.                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 1 failed, 19 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ...............F.FF.                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+E       AssertionError: assert 4 == 'Not Possible'
+E        +  where 4 = calculateTiles(3, 3, 2, 1)
+
+test_student.py:53: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       assert True == False
+E        +  where True = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_4 - AssertionError: assert 4 == '...
+FAILED test_student.py::test_checkTilesFit_2 - assert True == False
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 3 failed, 17 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..................F.                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 1 failed, 19 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.07s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............FFF.F..F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_2 _____________________________
+
+    def test_calculateTiles_2():
+>       assert calculateTiles(4, 3, 2, 1) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 2, 1)
+
+test_student.py:46: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_1 _____________________________
+
+    def test_checkTilesFit_1():
+>       assert checkTilesFit(4, 3, 2, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(4, 3, 2, 1)
+
+test_student.py:57: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_2 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_1 - assert False == True
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 5 failed, 15 passed in 0.10s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..................F.                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 1 failed, 19 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............FFFFFF..                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_2 _____________________________
+
+    def test_calculateTiles_2():
+>       assert calculateTiles(4, 3, 2, 1) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 2, 1)
+
+test_student.py:46: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+E       AssertionError: assert 4 == 'Not Possible'
+E        +  where 4 = calculateTiles(3, 3, 2, 1)
+
+test_student.py:53: AssertionError
+_____________________________ test_checkTilesFit_1 _____________________________
+
+    def test_checkTilesFit_1():
+>       assert checkTilesFit(4, 3, 2, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(4, 3, 2, 1)
+
+test_student.py:57: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       assert True == False
+E        +  where True = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_2 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_4 - AssertionError: assert 4 == '...
+FAILED test_student.py::test_checkTilesFit_1 - assert False == True
+FAILED test_student.py::test_checkTilesFit_2 - assert True == False
+========================= 6 failed, 14 passed in 0.10s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............FFFFFF..                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_2 _____________________________
+
+    def test_calculateTiles_2():
+>       assert calculateTiles(4, 3, 2, 1) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 2, 1)
+
+test_student.py:46: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+E       AssertionError: assert 4 == 'Not Possible'
+E        +  where 4 = calculateTiles(3, 3, 2, 1)
+
+test_student.py:53: AssertionError
+_____________________________ test_checkTilesFit_1 _____________________________
+
+    def test_checkTilesFit_1():
+>       assert checkTilesFit(4, 3, 2, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(4, 3, 2, 1)
+
+test_student.py:57: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       assert True == False
+E        +  where True = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_2 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_4 - AssertionError: assert 4 == '...
+FAILED test_student.py::test_checkTilesFit_1 - assert False == True
+FAILED test_student.py::test_checkTilesFit_2 - assert True == False
+========================= 6 failed, 14 passed in 0.40s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..................F.                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 1 failed, 19 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..................F.                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 1 failed, 19 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............FF.FFF..                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_2 _____________________________
+
+    def test_calculateTiles_2():
+>       assert calculateTiles(4, 3, 2, 1) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 2, 1)
+
+test_student.py:46: AssertionError
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+E       AssertionError: assert 4 == 'Not Possible'
+E        +  where 4 = calculateTiles(3, 3, 2, 1)
+
+test_student.py:53: AssertionError
+_____________________________ test_checkTilesFit_1 _____________________________
+
+    def test_checkTilesFit_1():
+>       assert checkTilesFit(4, 3, 2, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(4, 3, 2, 1)
+
+test_student.py:57: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       assert True == False
+E        +  where True = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_2 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_4 - AssertionError: assert 4 == '...
+FAILED test_student.py::test_checkTilesFit_1 - assert False == True
+FAILED test_student.py::test_checkTilesFit_2 - assert True == False
+========================= 5 failed, 15 passed in 0.09s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............FFF.F..F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_2 _____________________________
+
+    def test_calculateTiles_2():
+>       assert calculateTiles(4, 3, 2, 1) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 2, 1)
+
+test_student.py:46: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_1 _____________________________
+
+    def test_checkTilesFit_1():
+>       assert checkTilesFit(4, 3, 2, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(4, 3, 2, 1)
+
+test_student.py:57: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_2 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_1 - assert False == True
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 5 failed, 15 passed in 0.07s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............FF.FFF..                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_2 _____________________________
+
+    def test_calculateTiles_2():
+>       assert calculateTiles(4, 3, 2, 1) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 2, 1)
+
+test_student.py:46: AssertionError
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+E       AssertionError: assert 4 == 'Not Possible'
+E        +  where 4 = calculateTiles(3, 3, 2, 1)
+
+test_student.py:53: AssertionError
+_____________________________ test_checkTilesFit_1 _____________________________
+
+    def test_checkTilesFit_1():
+>       assert checkTilesFit(4, 3, 2, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(4, 3, 2, 1)
+
+test_student.py:57: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       assert True == False
+E        +  where True = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_2 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_4 - AssertionError: assert 4 == '...
+FAILED test_student.py::test_checkTilesFit_1 - assert False == True
+FAILED test_student.py::test_checkTilesFit_2 - assert True == False
+========================= 5 failed, 15 passed in 0.07s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..................F.                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 1 failed, 19 passed in 0.07s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.10s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_______________________ ERROR collecting test_student.py _______________________
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/python.py:511: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/hassan/anaconda3/lib/python3.8/site-packages/py/_path/local.py:704: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:991: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:975: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:671: in _load_unlocked
+    ???
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+test_student.py:1: in <module>
+    from a02 import calculateArea
+E     File "/home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment/a02.py", line 15
+E       if aP%aT==0 plot_length%tile_length==0 and plot_width%tile_width==0:
+E                   ^
+E   SyntaxError: invalid syntax
+=========================== short test summary info ============================
+ERROR test_student.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.13s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.07s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.07s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.07s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..............F...F.                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 2 failed, 18 passed in 0.07s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............FFFFFFFF                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:33: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == True:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 4, plot_length = 3, tile_width = 1, tile_length = 2
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if (plot_width>tile_width and plot_length>tile_length and plot_width>tilelength and plot_length>tilewidth) and aP%aT==0:
+E       NameError: name 'tilelength' is not defined
+
+a02.py:15: NameError
+____________________________ test_calculateTiles_2 _____________________________
+
+    def test_calculateTiles_2():
+>       assert calculateTiles(4, 3, 2, 1) == 6
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:33: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == True:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 4, plot_length = 3, tile_width = 2, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if (plot_width>tile_width and plot_length>tile_length and plot_width>tilelength and plot_length>tilewidth) and aP%aT==0:
+E       NameError: name 'tilelength' is not defined
+
+a02.py:15: NameError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+
+test_student.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:33: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == True:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 3, plot_length = 3, tile_width = 2, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if (plot_width>tile_width and plot_length>tile_length and plot_width>tilelength and plot_length>tilewidth) and aP%aT==0:
+E       NameError: name 'tilelength' is not defined
+
+a02.py:15: NameError
+_____________________________ test_checkTilesFit_1 _____________________________
+
+    def test_checkTilesFit_1():
+>       assert checkTilesFit(4, 3, 2, 1) == True
+
+test_student.py:57: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 4, plot_length = 3, tile_width = 2, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if (plot_width>tile_width and plot_length>tile_length and plot_width>tilelength and plot_length>tilewidth) and aP%aT==0:
+E       NameError: name 'tilelength' is not defined
+
+a02.py:15: NameError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+
+test_student.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 3, plot_length = 3, tile_width = 2, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if (plot_width>tile_width and plot_length>tile_length and plot_width>tilelength and plot_length>tilewidth) and aP%aT==0:
+E       NameError: name 'tilelength' is not defined
+
+a02.py:15: NameError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+
+test_student.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 4, plot_length = 3, tile_width = 2, tile_length = 2
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if (plot_width>tile_width and plot_length>tile_length and plot_width>tilelength and plot_length>tilewidth) and aP%aT==0:
+E       NameError: name 'tilelength' is not defined
+
+a02.py:15: NameError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+
+test_student.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 5, plot_length = 3, tile_width = 3, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if (plot_width>tile_width and plot_length>tile_length and plot_width>tilelength and plot_length>tilewidth) and aP%aT==0:
+E       NameError: name 'tilelength' is not defined
+
+a02.py:15: NameError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - NameError: name 'tilelength' ...
+FAILED test_student.py::test_calculateTiles_2 - NameError: name 'tilelength' ...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_4 - NameError: name 'tilelength' ...
+FAILED test_student.py::test_checkTilesFit_1 - NameError: name 'tilelength' i...
+FAILED test_student.py::test_checkTilesFit_2 - NameError: name 'tilelength' i...
+FAILED test_student.py::test_checkTilesFit_3 - NameError: name 'tilelength' i...
+FAILED test_student.py::test_checkTilesFit_4 - NameError: name 'tilelength' i...
+========================= 8 failed, 12 passed in 0.08s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............FFFFFFFF                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:32: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == True:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 4, plot_length = 3, tile_width = 1, tile_length = 2
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if (plot_width>tile_width and plot_length>tile_length and plot_width>tilelength and plot_length>tilewidth) and aP%aT==0:
+E       NameError: name 'tilelength' is not defined
+
+a02.py:15: NameError
+____________________________ test_calculateTiles_2 _____________________________
+
+    def test_calculateTiles_2():
+>       assert calculateTiles(4, 3, 2, 1) == 6
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:32: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == True:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 4, plot_length = 3, tile_width = 2, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if (plot_width>tile_width and plot_length>tile_length and plot_width>tilelength and plot_length>tilewidth) and aP%aT==0:
+E       NameError: name 'tilelength' is not defined
+
+a02.py:15: NameError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+
+test_student.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:32: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == True:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 3, plot_length = 3, tile_width = 2, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if (plot_width>tile_width and plot_length>tile_length and plot_width>tilelength and plot_length>tilewidth) and aP%aT==0:
+E       NameError: name 'tilelength' is not defined
+
+a02.py:15: NameError
+_____________________________ test_checkTilesFit_1 _____________________________
+
+    def test_checkTilesFit_1():
+>       assert checkTilesFit(4, 3, 2, 1) == True
+
+test_student.py:57: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 4, plot_length = 3, tile_width = 2, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if (plot_width>tile_width and plot_length>tile_length and plot_width>tilelength and plot_length>tilewidth) and aP%aT==0:
+E       NameError: name 'tilelength' is not defined
+
+a02.py:15: NameError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+
+test_student.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 3, plot_length = 3, tile_width = 2, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if (plot_width>tile_width and plot_length>tile_length and plot_width>tilelength and plot_length>tilewidth) and aP%aT==0:
+E       NameError: name 'tilelength' is not defined
+
+a02.py:15: NameError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+
+test_student.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 4, plot_length = 3, tile_width = 2, tile_length = 2
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if (plot_width>tile_width and plot_length>tile_length and plot_width>tilelength and plot_length>tilewidth) and aP%aT==0:
+E       NameError: name 'tilelength' is not defined
+
+a02.py:15: NameError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+
+test_student.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 5, plot_length = 3, tile_width = 3, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if (plot_width>tile_width and plot_length>tile_length and plot_width>tilelength and plot_length>tilewidth) and aP%aT==0:
+E       NameError: name 'tilelength' is not defined
+
+a02.py:15: NameError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - NameError: name 'tilelength' ...
+FAILED test_student.py::test_calculateTiles_2 - NameError: name 'tilelength' ...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_4 - NameError: name 'tilelength' ...
+FAILED test_student.py::test_checkTilesFit_1 - NameError: name 'tilelength' i...
+FAILED test_student.py::test_checkTilesFit_2 - NameError: name 'tilelength' i...
+FAILED test_student.py::test_checkTilesFit_3 - NameError: name 'tilelength' i...
+FAILED test_student.py::test_checkTilesFit_4 - NameError: name 'tilelength' i...
+========================= 8 failed, 12 passed in 0.09s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.09s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.......                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+========================= 1 failed, 19 passed in 0.07s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..................F.                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 1 failed, 19 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.07s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.08s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_______________________ ERROR collecting test_student.py _______________________
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/python.py:511: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/hassan/anaconda3/lib/python3.8/site-packages/py/_path/local.py:704: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:991: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:975: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:671: in _load_unlocked
+    ???
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+test_student.py:1: in <module>
+    from a02 import calculateArea
+E     File "/home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment/a02.py", line 32
+E       return (plot_length,plot_width) = (a,b)
+E                                       ^
+E   SyntaxError: invalid syntax
+=========================== short test summary info ============================
+ERROR test_student.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.13s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_______________________ ERROR collecting test_student.py _______________________
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/python.py:511: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/hassan/anaconda3/lib/python3.8/site-packages/py/_path/local.py:704: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:991: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:975: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:671: in _load_unlocked
+    ???
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+test_student.py:1: in <module>
+    from a02 import calculateArea
+E     File "/home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment/a02.py", line 32
+E       return (plot_length,plot_width) = (a,b)
+E                                       ^
+E   SyntaxError: invalid syntax
+=========================== short test summary info ============================
+ERROR test_student.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.15s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.10s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F..FFF                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+E       assert None == False
+E        +  where None = checkTilesFit(3, 3, 2, 1)
+
+test_student.py:60: AssertionError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert None == False
+E        +  where None = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_2 - assert None == False
+FAILED test_student.py::test_checkTilesFit_3 - assert None == False
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 5 failed, 15 passed in 0.09s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............F.F....F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+E       AssertionError: assert 'Not Possible' == 6
+E        +  where 'Not Possible' = calculateTiles(4, 3, 1, 2)
+
+test_student.py:43: AssertionError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+E       assert False == True
+E        +  where False = checkTilesFit(5, 3, 3, 1)
+
+test_student.py:66: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+FAILED test_student.py::test_checkTilesFit_4 - assert False == True
+========================= 3 failed, 17 passed in 0.07s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ....................                                     [100%]
+
+============================== 20 passed in 0.03s ==============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ....................                                     [100%]
+
+============================== 20 passed in 0.03s ==============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ....................                                     [100%]
+
+============================== 20 passed in 0.05s ==============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............FFF.F..F                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:35: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == True:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 4, plot_length = 3, tile_width = 1, tile_length = 2
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if aP%aT==0 and (plot_length%tile_length==0 or plot_length%tile_width==0) and (plot_width%tile_width==0 or plot_width%tile_length==0) and (plot_length>0 and plto_width>0 and tile_length>0 and tile_width>0) :
+E       NameError: name 'plto_width' is not defined
+
+a02.py:15: NameError
+____________________________ test_calculateTiles_2 _____________________________
+
+    def test_calculateTiles_2():
+>       assert calculateTiles(4, 3, 2, 1) == 6
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:35: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == True:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 4, plot_length = 3, tile_width = 2, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if aP%aT==0 and (plot_length%tile_length==0 or plot_length%tile_width==0) and (plot_width%tile_width==0 or plot_width%tile_length==0) and (plot_length>0 and plto_width>0 and tile_length>0 and tile_width>0) :
+E       NameError: name 'plto_width' is not defined
+
+a02.py:15: NameError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+
+test_student.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:35: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == True:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 4, plot_length = 3, tile_width = 12, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if aP%aT==0 and (plot_length%tile_length==0 or plot_length%tile_width==0) and (plot_width%tile_width==0 or plot_width%tile_length==0) and (plot_length>0 and plto_width>0 and tile_length>0 and tile_width>0) :
+E       NameError: name 'plto_width' is not defined
+
+a02.py:15: NameError
+_____________________________ test_checkTilesFit_1 _____________________________
+
+    def test_checkTilesFit_1():
+>       assert checkTilesFit(4, 3, 2, 1) == True
+
+test_student.py:57: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 4, plot_length = 3, tile_width = 2, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if aP%aT==0 and (plot_length%tile_length==0 or plot_length%tile_width==0) and (plot_width%tile_width==0 or plot_width%tile_length==0) and (plot_length>0 and plto_width>0 and tile_length>0 and tile_width>0) :
+E       NameError: name 'plto_width' is not defined
+
+a02.py:15: NameError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+
+test_student.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 5, plot_length = 3, tile_width = 3, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if aP%aT==0 and (plot_length%tile_length==0 or plot_length%tile_width==0) and (plot_width%tile_width==0 or plot_width%tile_length==0) and (plot_length>0 and plto_width>0 and tile_length>0 and tile_width>0) :
+E       NameError: name 'plto_width' is not defined
+
+a02.py:15: NameError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - NameError: name 'plto_width' ...
+FAILED test_student.py::test_calculateTiles_2 - NameError: name 'plto_width' ...
+FAILED test_student.py::test_calculateTiles_3 - NameError: name 'plto_width' ...
+FAILED test_student.py::test_checkTilesFit_1 - NameError: name 'plto_width' i...
+FAILED test_student.py::test_checkTilesFit_4 - NameError: name 'plto_width' i...
+========================= 5 failed, 15 passed in 0.07s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ....................                                     [100%]
+
+============================== 20 passed in 0.05s ==============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ....................                                     [100%]
+
+============================== 20 passed in 0.03s ==============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ....................                                     [100%]
+
+============================== 20 passed in 0.04s ==============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_______________________ ERROR collecting test_student.py _______________________
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/python.py:511: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/hassan/anaconda3/lib/python3.8/site-packages/py/_path/local.py:704: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:991: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:975: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:671: in _load_unlocked
+    ???
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+test_student.py:1: in <module>
+    from a02 import calculateArea
+E     File "/home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment/a02.py", line 15
+E       if (plot_width%tile_width==0 and plot_length%tile_length==0) or (plot_width%tile_length==0 and plot_length%tile_width==0)#if aP%aT==0 and (plot_length%tile_length==0 or plot_length%tile_width==0) and (plot_width%tile_width==0 or plot_width%tile_length==0) and (plot_length>0 and plot_width>0 and tile_length>0 and tile_width>0) :
+E                                                                                                                                ^
+E   SyntaxError: invalid syntax
+=========================== short test summary info ============================
+ERROR test_student.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.23s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..............F.....                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+========================= 1 failed, 19 passed in 0.08s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..............F.....                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+========================= 1 failed, 19 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ............FFFFFFFF                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_1 _____________________________
+
+    def test_calculateTiles_1():
+>       assert calculateTiles(4, 3, 1, 2) == 6
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:35: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == True:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 4, plot_length = 3, tile_width = 1, tile_length = 2
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if aP%aT==0 (plot_width%tile_width==0 and plot_length%tile_length==0) or (plot_width%tile_length==0 and plot_length%tile_width==0):#if aP%aT==0 and (plot_length%tile_length==0 or plot_length%tile_width==0) and (plot_width%tile_width==0 or plot_width%tile_length==0) and (plot_length>0 and plot_width>0 and tile_length>0 and tile_width>0) :
+E       TypeError: 'int' object is not callable
+
+a02.py:15: TypeError
+____________________________ test_calculateTiles_2 _____________________________
+
+    def test_calculateTiles_2():
+>       assert calculateTiles(4, 3, 2, 1) == 6
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:35: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == True:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 4, plot_length = 3, tile_width = 2, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if aP%aT==0 (plot_width%tile_width==0 and plot_length%tile_length==0) or (plot_width%tile_length==0 and plot_length%tile_width==0):#if aP%aT==0 and (plot_length%tile_length==0 or plot_length%tile_width==0) and (plot_width%tile_width==0 or plot_width%tile_length==0) and (plot_length>0 and plot_width>0 and tile_length>0 and tile_width>0) :
+E       TypeError: 'int' object is not callable
+
+a02.py:15: TypeError
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+
+test_student.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:35: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == True:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 4, plot_length = 3, tile_width = 12, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if aP%aT==0 (plot_width%tile_width==0 and plot_length%tile_length==0) or (plot_width%tile_length==0 and plot_length%tile_width==0):#if aP%aT==0 and (plot_length%tile_length==0 or plot_length%tile_width==0) and (plot_width%tile_width==0 or plot_width%tile_length==0) and (plot_length>0 and plot_width>0 and tile_length>0 and tile_width>0) :
+E       TypeError: 'int' object is not callable
+
+a02.py:15: TypeError
+____________________________ test_calculateTiles_4 _____________________________
+
+    def test_calculateTiles_4():
+>       assert calculateTiles(3, 3, 2, 1) == "Not Possible"
+
+test_student.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+a02.py:35: in calculateTiles
+    if checkTilesFit(plot_width, plot_length, tile_width, tile_length) == True:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 3, plot_length = 3, tile_width = 2, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if aP%aT==0 (plot_width%tile_width==0 and plot_length%tile_length==0) or (plot_width%tile_length==0 and plot_length%tile_width==0):#if aP%aT==0 and (plot_length%tile_length==0 or plot_length%tile_width==0) and (plot_width%tile_width==0 or plot_width%tile_length==0) and (plot_length>0 and plot_width>0 and tile_length>0 and tile_width>0) :
+E       TypeError: 'int' object is not callable
+
+a02.py:15: TypeError
+_____________________________ test_checkTilesFit_1 _____________________________
+
+    def test_checkTilesFit_1():
+>       assert checkTilesFit(4, 3, 2, 1) == True
+
+test_student.py:57: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 4, plot_length = 3, tile_width = 2, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if aP%aT==0 (plot_width%tile_width==0 and plot_length%tile_length==0) or (plot_width%tile_length==0 and plot_length%tile_width==0):#if aP%aT==0 and (plot_length%tile_length==0 or plot_length%tile_width==0) and (plot_width%tile_width==0 or plot_width%tile_length==0) and (plot_length>0 and plot_width>0 and tile_length>0 and tile_width>0) :
+E       TypeError: 'int' object is not callable
+
+a02.py:15: TypeError
+_____________________________ test_checkTilesFit_2 _____________________________
+
+    def test_checkTilesFit_2():
+>       assert checkTilesFit(3, 3, 2, 1) == False
+
+test_student.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 3, plot_length = 3, tile_width = 2, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if aP%aT==0 (plot_width%tile_width==0 and plot_length%tile_length==0) or (plot_width%tile_length==0 and plot_length%tile_width==0):#if aP%aT==0 and (plot_length%tile_length==0 or plot_length%tile_width==0) and (plot_width%tile_width==0 or plot_width%tile_length==0) and (plot_length>0 and plot_width>0 and tile_length>0 and tile_width>0) :
+E       TypeError: 'int' object is not callable
+
+a02.py:15: TypeError
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+
+test_student.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 4, plot_length = 3, tile_width = 2, tile_length = 2
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if aP%aT==0 (plot_width%tile_width==0 and plot_length%tile_length==0) or (plot_width%tile_length==0 and plot_length%tile_width==0):#if aP%aT==0 and (plot_length%tile_length==0 or plot_length%tile_width==0) and (plot_width%tile_width==0 or plot_width%tile_length==0) and (plot_length>0 and plot_width>0 and tile_length>0 and tile_width>0) :
+E       TypeError: 'int' object is not callable
+
+a02.py:15: TypeError
+_____________________________ test_checkTilesFit_4 _____________________________
+
+    def test_checkTilesFit_4():
+>       assert checkTilesFit(5, 3, 3, 1) == True
+
+test_student.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plot_width = 5, plot_length = 3, tile_width = 3, tile_length = 1
+
+    def checkTilesFit(plot_width, plot_length, tile_width, tile_length):
+        aP = plot_width*plot_length
+        aT = tile_width*tile_length
+>       if aP%aT==0 (plot_width%tile_width==0 and plot_length%tile_length==0) or (plot_width%tile_length==0 and plot_length%tile_width==0):#if aP%aT==0 and (plot_length%tile_length==0 or plot_length%tile_width==0) and (plot_width%tile_width==0 or plot_width%tile_length==0) and (plot_length>0 and plot_width>0 and tile_length>0 and tile_width>0) :
+E       TypeError: 'int' object is not callable
+
+a02.py:15: TypeError
+=============================== warnings summary ===============================
+a02.py:15
+  /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment/a02.py:15: SyntaxWarning: 'int' object is not callable; perhaps you missed a comma?
+    if aP%aT==0 (plot_width%tile_width==0 and plot_length%tile_length==0) or (plot_width%tile_length==0 and plot_length%tile_width==0):#if aP%aT==0 and (plot_length%tile_length==0 or plot_length%tile_width==0) and (plot_width%tile_width==0 or plot_width%tile_length==0) and (plot_length>0 and plot_width>0 and tile_length>0 and tile_width>0) :
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_1 - TypeError: 'int' object is no...
+FAILED test_student.py::test_calculateTiles_2 - TypeError: 'int' object is no...
+FAILED test_student.py::test_calculateTiles_3 - TypeError: 'int' object is no...
+FAILED test_student.py::test_calculateTiles_4 - TypeError: 'int' object is no...
+FAILED test_student.py::test_checkTilesFit_1 - TypeError: 'int' object is not...
+FAILED test_student.py::test_checkTilesFit_2 - TypeError: 'int' object is not...
+FAILED test_student.py::test_checkTilesFit_3 - TypeError: 'int' object is not...
+FAILED test_student.py::test_checkTilesFit_4 - TypeError: 'int' object is not...
+=================== 8 failed, 12 passed, 1 warning in 0.09s ====================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..................F.                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 1 failed, 19 passed in 0.07s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..................F.                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_checkTilesFit_3 _____________________________
+
+    def test_checkTilesFit_3():
+>       assert checkTilesFit(4, 3, 2, 2) == False
+E       assert True == False
+E        +  where True = checkTilesFit(4, 3, 2, 2)
+
+test_student.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_checkTilesFit_3 - assert True == False
+========================= 1 failed, 19 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ..............F.....                                     [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_calculateTiles_3 _____________________________
+
+    def test_calculateTiles_3():
+>       assert calculateTiles(4, 3, 12, 1) == 1
+E       AssertionError: assert 'Not Possible' == 1
+E        +  where 'Not Possible' = calculateTiles(4, 3, 12, 1)
+
+test_student.py:50: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_calculateTiles_3 - AssertionError: assert 'Not P...
+========================= 1 failed, 19 passed in 0.06s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 20 items
+
+test_student.py ....................                                     [100%]
+
+============================== 20 passed in 0.05s ==============================

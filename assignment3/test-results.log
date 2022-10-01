@@ -1,0 +1,3247 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_______________________ ERROR collecting test_student.py _______________________
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/python.py:511: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/hassan/anaconda3/lib/python3.8/site-packages/py/_path/local.py:704: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:991: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:975: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:671: in _load_unlocked
+    ???
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+test_student.py:1: in <module>
+    from a04 import openLocks
+E     File "/home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3/a04.py", line 21
+E       def mostTouchableLocker(x,y):
+E                                   ^
+E   IndentationError: unindent does not match any outer indentation level
+=========================== short test summary info ============================
+ERROR test_student.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.15s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_______________________ ERROR collecting test_student.py _______________________
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/python.py:511: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/hassan/anaconda3/lib/python3.8/site-packages/py/_path/local.py:704: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:991: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:975: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:671: in _load_unlocked
+    ???
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+test_student.py:1: in <module>
+    from a04 import openLocks
+E     File "/home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3/a04.py", line 21
+E       def mostTouchableLocker(x,y):
+E                                   ^
+E   IndentationError: unindent does not match any outer indentation level
+=========================== short test summary info ============================
+ERROR test_student.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.14s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_______________________ ERROR collecting test_student.py _______________________
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/python.py:511: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/hassan/anaconda3/lib/python3.8/site-packages/py/_path/local.py:704: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:991: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:975: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:671: in _load_unlocked
+    ???
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+test_student.py:1: in <module>
+    from a04 import openLocks
+E     File "/home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3/a04.py", line 21
+E       def mostTouchableLocker(x,y):
+E                                   ^
+E   IndentationError: unindent does not match any outer indentation level
+=========================== short test summary info ============================
+ERROR test_student.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.13s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_______________________ ERROR collecting test_student.py _______________________
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/python.py:511: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/hassan/anaconda3/lib/python3.8/site-packages/py/_path/local.py:704: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:991: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:975: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:671: in _load_unlocked
+    ???
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+test_student.py:1: in <module>
+    from a04 import openLocks
+E     File "/home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3/a04.py", line 21
+E       def mostTouchableLocker(x,y):
+E                                   ^
+E   IndentationError: unindent does not match any outer indentation level
+=========================== short test summary info ============================
+ERROR test_student.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.14s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_______________________ ERROR collecting test_student.py _______________________
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/python.py:511: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/home/hassan/anaconda3/lib/python3.8/site-packages/py/_path/local.py:704: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:991: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:975: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:671: in _load_unlocked
+    ???
+/home/hassan/anaconda3/lib/python3.8/site-packages/_pytest/assertion/rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+test_student.py:1: in <module>
+    from a04 import openLocks
+E     File "/home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3/a04.py", line 21
+E       def mostTouchableLocker(x,y):
+E                                   ^
+E   IndentationError: unindent does not match any outer indentation level
+=========================== short test summary info ============================
+ERROR test_student.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.14s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py .FF.F......FF                                            [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_openLocks_2 _______________________________
+
+    def test_openLocks_2():
+>       assert openLocks(100, 100) == 10
+E       assert 9 == 10
+E        +  where 9 = openLocks(100, 100)
+
+test_student.py:11: AssertionError
+_______________________________ test_openLocks_3 _______________________________
+
+    def test_openLocks_3():
+>       assert openLocks(100, 72) == 34
+E       assert 9 == 34
+E        +  where 9 = openLocks(100, 72)
+
+test_student.py:14: AssertionError
+_______________________________ test_openLocks_5 _______________________________
+
+    def test_openLocks_5():
+>       assert openLocks(10000, 1000) == 5228
+
+test_student.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10000, number_of_students = 1000
+
+    def openLocks(number_of_lockers,number_of_students):
+        a = [False]*number_of_lockers
+        for i in range (1,number_of_lockers):
+            for j in range (1,number_of_lockers):
+>               if j%i==0:
+E               Failed: Timeout >5.0s
+
+a04.py:7: Failed
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 100 == 60
+E        +  where 100 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 100 == 96
+E        +  where 100 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_openLocks_2 - assert 9 == 10
+FAILED test_student.py::test_openLocks_3 - assert 9 == 34
+FAILED test_student.py::test_openLocks_5 - Failed: Timeout >5.0s
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 100 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 100 == 96
+========================= 5 failed, 8 passed in 5.07s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py .FF.F...FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_openLocks_2 _______________________________
+
+    def test_openLocks_2():
+>       assert openLocks(100, 100) == 10
+E       assert 9 == 10
+E        +  where 9 = openLocks(100, 100)
+
+test_student.py:11: AssertionError
+_______________________________ test_openLocks_3 _______________________________
+
+    def test_openLocks_3():
+>       assert openLocks(100, 72) == 34
+E       assert 9 == 34
+E        +  where 9 = openLocks(100, 72)
+
+test_student.py:14: AssertionError
+_______________________________ test_openLocks_5 _______________________________
+
+    def test_openLocks_5():
+>       assert openLocks(10000, 1000) == 5228
+
+test_student.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10000, number_of_students = 1000
+
+    def openLocks(number_of_lockers,number_of_students):
+        a = [False]*number_of_lockers
+        for i in range (1,number_of_lockers):
+            for j in range (1,number_of_lockers):
+>               if j%i==0:
+E               Failed: Timeout >5.0s
+
+a04.py:7: Failed
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 8 == 10
+E        +  where 8 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 16 == 20
+E        +  where 16 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 64 == 72
+E        +  where 64 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 64 == 60
+E        +  where 64 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 64 == 96
+E        +  where 64 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_openLocks_2 - assert 9 == 10
+FAILED test_student.py::test_openLocks_3 - assert 9 == 34
+FAILED test_student.py::test_openLocks_5 - Failed: Timeout >5.0s
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 8 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 16 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 64 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 64 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 64 == 96
+========================= 8 failed, 5 passed in 5.08s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_______________________ ERROR collecting test_student.py _______________________
+ImportError while importing test module '/home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3/test_student.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+test_student.py:2: in <module>
+    from a04 import mostTouchableLocker
+E   ImportError: cannot import name 'mostTouchableLocker' from 'a04' (/home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3/a04.py)
+=========================== short test summary info ============================
+ERROR test_student.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.07s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py .FF.F...FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_openLocks_2 _______________________________
+
+    def test_openLocks_2():
+>       assert openLocks(100, 100) == 10
+E       assert 9 == 10
+E        +  where 9 = openLocks(100, 100)
+
+test_student.py:11: AssertionError
+_______________________________ test_openLocks_3 _______________________________
+
+    def test_openLocks_3():
+>       assert openLocks(100, 72) == 34
+E       assert 9 == 34
+E        +  where 9 = openLocks(100, 72)
+
+test_student.py:14: AssertionError
+_______________________________ test_openLocks_5 _______________________________
+
+    def test_openLocks_5():
+>       assert openLocks(10000, 1000) == 5228
+
+test_student.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10000, number_of_students = 1000
+
+    def openLocks(number_of_lockers,number_of_students):
+        a = [False]*number_of_lockers
+        for i in range (1,number_of_lockers):
+            for j in range (1,number_of_lockers):
+>               if j%i==0:
+E               Failed: Timeout >5.0s
+
+a04.py:7: Failed
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 8 == 10
+E        +  where 8 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 16 == 20
+E        +  where 16 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 64 == 72
+E        +  where 64 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 64 == 60
+E        +  where 64 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 64 == 96
+E        +  where 64 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_openLocks_2 - assert 9 == 10
+FAILED test_student.py::test_openLocks_3 - assert 9 == 34
+FAILED test_student.py::test_openLocks_5 - Failed: Timeout >5.0s
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 8 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 16 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 64 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 64 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 64 == 96
+========================= 8 failed, 5 passed in 5.06s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py .FF.F...FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_openLocks_2 _______________________________
+
+    def test_openLocks_2():
+>       assert openLocks(100, 100) == 10
+E       assert 9 == 10
+E        +  where 9 = openLocks(100, 100)
+
+test_student.py:11: AssertionError
+_______________________________ test_openLocks_3 _______________________________
+
+    def test_openLocks_3():
+>       assert openLocks(100, 72) == 34
+E       assert 9 == 34
+E        +  where 9 = openLocks(100, 72)
+
+test_student.py:14: AssertionError
+_______________________________ test_openLocks_5 _______________________________
+
+    def test_openLocks_5():
+>       assert openLocks(10000, 1000) == 5228
+
+test_student.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10000, number_of_students = 1000
+
+    def openLocks(number_of_lockers,number_of_students):
+        a = [False]*number_of_lockers
+        for i in range (1,number_of_lockers):
+            for j in range (1,number_of_lockers):
+>               if j%i==0:
+E               Failed: Timeout >5.0s
+
+a04.py:7: Failed
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10, number_of_students = 10
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+
+test_student.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 20, number_of_students = 10
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+
+test_student.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 72, number_of_students = 100
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 100, number_of_students = 70
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 100, number_of_students = 100
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+=========================== short test summary info ============================
+FAILED test_student.py::test_openLocks_2 - assert 9 == 10
+FAILED test_student.py::test_openLocks_3 - assert 9 == 34
+FAILED test_student.py::test_openLocks_5 - Failed: Timeout >5.0s
+FAILED test_student.py::test_mostTouchableLocker_1 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_2 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_3 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_4 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_5 - IndexError: list index o...
+========================= 8 failed, 5 passed in 5.07s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py FFFFF...FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_openLocks_1 _______________________________
+
+    def test_openLocks_1():
+>       assert openLocks(10, 10) == 3
+E       assert 4 == 3
+E        +  where 4 = openLocks(10, 10)
+
+test_student.py:8: AssertionError
+_______________________________ test_openLocks_2 _______________________________
+
+    def test_openLocks_2():
+>       assert openLocks(100, 100) == 10
+E       assert 9 == 10
+E        +  where 9 = openLocks(100, 100)
+
+test_student.py:11: AssertionError
+_______________________________ test_openLocks_3 _______________________________
+
+    def test_openLocks_3():
+>       assert openLocks(100, 72) == 34
+E       assert 9 == 34
+E        +  where 9 = openLocks(100, 72)
+
+test_student.py:14: AssertionError
+_______________________________ test_openLocks_4 _______________________________
+
+    def test_openLocks_4():
+>       assert openLocks(70, 100) == 8
+E       assert 9 == 8
+E        +  where 9 = openLocks(70, 100)
+
+test_student.py:17: AssertionError
+_______________________________ test_openLocks_5 _______________________________
+
+    def test_openLocks_5():
+>       assert openLocks(10000, 1000) == 5228
+
+test_student.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10000, number_of_students = 1000
+
+    def openLocks(number_of_lockers,number_of_students):
+        a = [False]*number_of_lockers
+        for i in range (1,number_of_lockers):
+>           for j in range (1,number_of_lockers+1):
+E           Failed: Timeout >5.0s
+
+a04.py:6: Failed
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10, number_of_students = 10
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+
+test_student.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 20, number_of_students = 10
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+
+test_student.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 72, number_of_students = 100
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 100, number_of_students = 70
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 100, number_of_students = 100
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+=========================== short test summary info ============================
+FAILED test_student.py::test_openLocks_1 - assert 4 == 3
+FAILED test_student.py::test_openLocks_2 - assert 9 == 10
+FAILED test_student.py::test_openLocks_3 - assert 9 == 34
+FAILED test_student.py::test_openLocks_4 - assert 9 == 8
+FAILED test_student.py::test_openLocks_5 - Failed: Timeout >5.0s
+FAILED test_student.py::test_mostTouchableLocker_1 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_2 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_3 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_4 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_5 - IndexError: list index o...
+========================= 10 failed, 3 passed in 5.07s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ..F.F..FFFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_openLocks_3 _______________________________
+
+    def test_openLocks_3():
+>       assert openLocks(100, 72) == 34
+E       assert 10 == 34
+E        +  where 10 = openLocks(100, 72)
+
+test_student.py:14: AssertionError
+_______________________________ test_openLocks_5 _______________________________
+
+    def test_openLocks_5():
+>       assert openLocks(10000, 1000) == 5228
+
+test_student.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10000, number_of_students = 1000
+
+    def openLocks(number_of_lockers,number_of_students):
+        a = [False]*number_of_lockers
+        for i in range (1,number_of_lockers+1):
+            for j in range (1,number_of_lockers+1):
+>               if j%i==0:
+E               Failed: Timeout >5.0s
+
+a04.py:7: Failed
+_______________________________ test_openLocks_8 _______________________________
+
+    def test_openLocks_8():
+>       assert openLocks(1, 0) == 0
+E       assert 1 == 0
+E        +  where 1 = openLocks(1, 0)
+
+test_student.py:30: AssertionError
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10, number_of_students = 10
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+
+test_student.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 20, number_of_students = 10
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+
+test_student.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 72, number_of_students = 100
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 100, number_of_students = 70
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 100, number_of_students = 100
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+=========================== short test summary info ============================
+FAILED test_student.py::test_openLocks_3 - assert 10 == 34
+FAILED test_student.py::test_openLocks_5 - Failed: Timeout >5.0s
+FAILED test_student.py::test_openLocks_8 - assert 1 == 0
+FAILED test_student.py::test_mostTouchableLocker_1 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_2 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_3 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_4 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_5 - IndexError: list index o...
+========================= 8 failed, 5 passed in 5.07s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ..F.F..FFFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_openLocks_3 _______________________________
+
+    def test_openLocks_3():
+>       assert openLocks(100, 72) == 34
+E       assert 10 == 34
+E        +  where 10 = openLocks(100, 72)
+
+test_student.py:14: AssertionError
+_______________________________ test_openLocks_5 _______________________________
+
+    def test_openLocks_5():
+>       assert openLocks(10000, 1000) == 5228
+
+test_student.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10000, number_of_students = 1000
+
+    def openLocks(number_of_lockers,number_of_students):
+        a = [False]*number_of_lockers
+        for i in range (1,number_of_lockers+1):
+            for j in range (1,number_of_lockers+1):
+>               if j%i==0:
+E               Failed: Timeout >5.0s
+
+a04.py:7: Failed
+_______________________________ test_openLocks_8 _______________________________
+
+    def test_openLocks_8():
+>       assert openLocks(1, 0) == 0
+E       assert 1 == 0
+E        +  where 1 = openLocks(1, 0)
+
+test_student.py:30: AssertionError
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10, number_of_students = 10
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+
+test_student.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 20, number_of_students = 10
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+
+test_student.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 72, number_of_students = 100
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 100, number_of_students = 70
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 100, number_of_students = 100
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:39: IndexError
+=========================== short test summary info ============================
+FAILED test_student.py::test_openLocks_3 - assert 10 == 34
+FAILED test_student.py::test_openLocks_5 - Failed: Timeout >5.0s
+FAILED test_student.py::test_openLocks_8 - assert 1 == 0
+FAILED test_student.py::test_mostTouchableLocker_1 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_2 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_3 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_4 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_5 - IndexError: list index o...
+========================= 8 failed, 5 passed in 5.07s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py FFFFFFFFFFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_openLocks_1 _______________________________
+
+    def test_openLocks_1():
+>       assert openLocks(10, 10) == 3
+
+test_student.py:8: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10, number_of_students = 10
+
+    def openLocks(number_of_lockers,number_of_students):
+>       if number_of_locker == 0 or number_of_students==0:
+E       NameError: name 'number_of_locker' is not defined
+
+a04.py:4: NameError
+_______________________________ test_openLocks_2 _______________________________
+
+    def test_openLocks_2():
+>       assert openLocks(100, 100) == 10
+
+test_student.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 100, number_of_students = 100
+
+    def openLocks(number_of_lockers,number_of_students):
+>       if number_of_locker == 0 or number_of_students==0:
+E       NameError: name 'number_of_locker' is not defined
+
+a04.py:4: NameError
+_______________________________ test_openLocks_3 _______________________________
+
+    def test_openLocks_3():
+>       assert openLocks(100, 72) == 34
+
+test_student.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 100, number_of_students = 72
+
+    def openLocks(number_of_lockers,number_of_students):
+>       if number_of_locker == 0 or number_of_students==0:
+E       NameError: name 'number_of_locker' is not defined
+
+a04.py:4: NameError
+_______________________________ test_openLocks_4 _______________________________
+
+    def test_openLocks_4():
+>       assert openLocks(70, 100) == 8
+
+test_student.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 70, number_of_students = 100
+
+    def openLocks(number_of_lockers,number_of_students):
+>       if number_of_locker == 0 or number_of_students==0:
+E       NameError: name 'number_of_locker' is not defined
+
+a04.py:4: NameError
+_______________________________ test_openLocks_5 _______________________________
+
+    def test_openLocks_5():
+>       assert openLocks(10000, 1000) == 5228
+
+test_student.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10000, number_of_students = 1000
+
+    def openLocks(number_of_lockers,number_of_students):
+>       if number_of_locker == 0 or number_of_students==0:
+E       NameError: name 'number_of_locker' is not defined
+
+a04.py:4: NameError
+_______________________________ test_openLocks_6 _______________________________
+
+    def test_openLocks_6():
+>       assert openLocks(0, 0) == 0
+
+test_student.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 0, number_of_students = 0
+
+    def openLocks(number_of_lockers,number_of_students):
+>       if number_of_locker == 0 or number_of_students==0:
+E       NameError: name 'number_of_locker' is not defined
+
+a04.py:4: NameError
+_______________________________ test_openLocks_7 _______________________________
+
+    def test_openLocks_7():
+>       assert openLocks(0, 3) == 0
+
+test_student.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 0, number_of_students = 3
+
+    def openLocks(number_of_lockers,number_of_students):
+>       if number_of_locker == 0 or number_of_students==0:
+E       NameError: name 'number_of_locker' is not defined
+
+a04.py:4: NameError
+_______________________________ test_openLocks_8 _______________________________
+
+    def test_openLocks_8():
+>       assert openLocks(1, 0) == 0
+
+test_student.py:30: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 1, number_of_students = 0
+
+    def openLocks(number_of_lockers,number_of_students):
+>       if number_of_locker == 0 or number_of_students==0:
+E       NameError: name 'number_of_locker' is not defined
+
+a04.py:4: NameError
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10, number_of_students = 10
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:42: IndexError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+
+test_student.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 20, number_of_students = 10
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:42: IndexError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+
+test_student.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 72, number_of_students = 100
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:42: IndexError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 100, number_of_students = 70
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:42: IndexError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 100, number_of_students = 100
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:42: IndexError
+=========================== short test summary info ============================
+FAILED test_student.py::test_openLocks_1 - NameError: name 'number_of_locker'...
+FAILED test_student.py::test_openLocks_2 - NameError: name 'number_of_locker'...
+FAILED test_student.py::test_openLocks_3 - NameError: name 'number_of_locker'...
+FAILED test_student.py::test_openLocks_4 - NameError: name 'number_of_locker'...
+FAILED test_student.py::test_openLocks_5 - NameError: name 'number_of_locker'...
+FAILED test_student.py::test_openLocks_6 - NameError: name 'number_of_locker'...
+FAILED test_student.py::test_openLocks_7 - NameError: name 'number_of_locker'...
+FAILED test_student.py::test_openLocks_8 - NameError: name 'number_of_locker'...
+FAILED test_student.py::test_mostTouchableLocker_1 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_2 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_3 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_4 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_5 - IndexError: list index o...
+============================== 13 failed in 0.08s ==============================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ..F.F...FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_openLocks_3 _______________________________
+
+    def test_openLocks_3():
+>       assert openLocks(100, 72) == 34
+E       assert 10 == 34
+E        +  where 10 = openLocks(100, 72)
+
+test_student.py:14: AssertionError
+_______________________________ test_openLocks_5 _______________________________
+
+    def test_openLocks_5():
+>       assert openLocks(10000, 1000) == 5228
+
+test_student.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10000, number_of_students = 1000
+
+    def openLocks(number_of_lockers,number_of_students):
+        if number_of_lockers == 0 or number_of_students==0:
+            return 0
+        else:
+            a = [False]*number_of_lockers
+            for i in range (1,number_of_lockers+1):
+                for j in range (1,number_of_lockers+1):
+>                   if j%i==0:
+E                   Failed: Timeout >5.0s
+
+a04.py:10: Failed
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10, number_of_students = 10
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:42: IndexError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+
+test_student.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 20, number_of_students = 10
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:42: IndexError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+
+test_student.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 72, number_of_students = 100
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:42: IndexError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 100, number_of_students = 70
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:42: IndexError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 100, number_of_students = 100
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers):
+            a.append(i)
+        for j in range(number_of_lockers):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:42: IndexError
+=========================== short test summary info ============================
+FAILED test_student.py::test_openLocks_3 - assert 10 == 34
+FAILED test_student.py::test_openLocks_5 - Failed: Timeout >5.0s
+FAILED test_student.py::test_mostTouchableLocker_1 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_2 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_3 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_4 - IndexError: list index o...
+FAILED test_student.py::test_mostTouchableLocker_5 - IndexError: list index o...
+========================= 7 failed, 6 passed in 5.07s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ..F.F...FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_openLocks_3 _______________________________
+
+    def test_openLocks_3():
+>       assert openLocks(100, 72) == 34
+E       assert 10 == 34
+E        +  where 10 = openLocks(100, 72)
+
+test_student.py:14: AssertionError
+_______________________________ test_openLocks_5 _______________________________
+
+    def test_openLocks_5():
+>       assert openLocks(10000, 1000) == 5228
+
+test_student.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10000, number_of_students = 1000
+
+    def openLocks(number_of_lockers,number_of_students):
+        if number_of_lockers == 0 or number_of_students==0:
+            return 0
+        else:
+            a = [False]*number_of_lockers
+            for i in range (1,number_of_lockers+1):
+                for j in range (1,number_of_lockers+1):
+>                   if j%i==0:
+E                   Failed: Timeout >5.0s
+
+a04.py:10: Failed
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 8 == 10
+E        +  where 8 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 16 == 20
+E        +  where 16 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 64 == 72
+E        +  where 64 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 64 == 60
+E        +  where 64 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 64 == 96
+E        +  where 64 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_openLocks_3 - assert 10 == 34
+FAILED test_student.py::test_openLocks_5 - Failed: Timeout >5.0s
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 8 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 16 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 64 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 64 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 64 == 96
+========================= 7 failed, 6 passed in 5.06s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ..F.F...FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_openLocks_3 _______________________________
+
+    def test_openLocks_3():
+>       assert openLocks(100, 72) == 34
+E       assert 10 == 34
+E        +  where 10 = openLocks(100, 72)
+
+test_student.py:14: AssertionError
+_______________________________ test_openLocks_5 _______________________________
+
+    def test_openLocks_5():
+>       assert openLocks(10000, 1000) == 5228
+
+test_student.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10000, number_of_students = 1000
+
+    def openLocks(number_of_lockers,number_of_students):
+        if number_of_lockers == 0 or number_of_students==0:
+            return 0
+        else:
+            a = [False]*number_of_lockers
+            for i in range (1,number_of_lockers+1):
+                for j in range (1,number_of_lockers+1):
+>                   if j%i==0:
+E                   Failed: Timeout >5.0s
+
+a04.py:10: Failed
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 8 == 10
+E        +  where 8 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 16 == 20
+E        +  where 16 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 64 == 72
+E        +  where 64 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 64 == 60
+E        +  where 64 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 64 == 96
+E        +  where 64 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_openLocks_3 - assert 10 == 34
+FAILED test_student.py::test_openLocks_5 - Failed: Timeout >5.0s
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 8 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 16 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 64 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 64 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 64 == 96
+========================= 7 failed, 6 passed in 5.06s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ..F.F...FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_openLocks_3 _______________________________
+
+    def test_openLocks_3():
+>       assert openLocks(100, 72) == 34
+E       assert 10 == 34
+E        +  where 10 = openLocks(100, 72)
+
+test_student.py:14: AssertionError
+_______________________________ test_openLocks_5 _______________________________
+
+    def test_openLocks_5():
+>       assert openLocks(10000, 1000) == 5228
+
+test_student.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 10000, number_of_students = 1000
+
+    def openLocks(number_of_lockers,number_of_students):
+        if number_of_lockers == 0 or number_of_students==0:
+            return 0
+        else:
+            a = [False]*number_of_lockers
+            for i in range (1,number_of_lockers+1):
+                for j in range (1,number_of_lockers+1):
+>                   if j%i==0:
+E                   Failed: Timeout >5.0s
+
+a04.py:10: Failed
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 8 == 10
+E        +  where 8 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 16 == 20
+E        +  where 16 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 64 == 72
+E        +  where 64 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 64 == 60
+E        +  where 64 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 64 == 96
+E        +  where 64 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_openLocks_3 - assert 10 == 34
+FAILED test_student.py::test_openLocks_5 - Failed: Timeout >5.0s
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 8 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 16 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 64 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 64 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 64 == 96
+========================= 7 failed, 6 passed in 5.08s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ..FFF...FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_openLocks_3 _______________________________
+
+    def test_openLocks_3():
+>       assert openLocks(100, 72) == 34
+E       assert 8 == 34
+E        +  where 8 = openLocks(100, 72)
+
+test_student.py:14: AssertionError
+_______________________________ test_openLocks_4 _______________________________
+
+    def test_openLocks_4():
+>       assert openLocks(70, 100) == 8
+
+test_student.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 70, number_of_students = 100
+
+    def openLocks(number_of_lockers,number_of_students):
+        if number_of_lockers == 0 or number_of_students==0:
+            return 0
+        else:
+            a = [False]*number_of_lockers
+            for i in range (1,number_of_lockers+1):
+                for j in range (1,number_of_students+1):
+                    if j%i==0:
+>                       a[j-1]=not a[j-1]
+E                       IndexError: list index out of range
+
+a04.py:11: IndexError
+_______________________________ test_openLocks_5 _______________________________
+
+    def test_openLocks_5():
+>       assert openLocks(10000, 1000) == 5228
+E       assert 31 == 5228
+E        +  where 31 = openLocks(10000, 1000)
+
+test_student.py:20: AssertionError
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 8 == 10
+E        +  where 8 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 16 == 20
+E        +  where 16 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 64 == 72
+E        +  where 64 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 64 == 60
+E        +  where 64 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 64 == 96
+E        +  where 64 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_openLocks_3 - assert 8 == 34
+FAILED test_student.py::test_openLocks_4 - IndexError: list index out of range
+FAILED test_student.py::test_openLocks_5 - assert 31 == 5228
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 8 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 16 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 64 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 64 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 64 == 96
+========================= 8 failed, 5 passed in 0.69s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ........FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 8 == 10
+E        +  where 8 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 16 == 20
+E        +  where 16 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 64 == 72
+E        +  where 64 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 64 == 60
+E        +  where 64 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 64 == 96
+E        +  where 64 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 8 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 16 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 64 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 64 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 64 == 96
+========================= 5 failed, 8 passed in 0.71s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ........FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 6 == 10
+E        +  where 6 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 6 == 20
+E        +  where 6 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 24 == 72
+E        +  where 24 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 24 == 60
+E        +  where 24 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 24 == 96
+E        +  where 24 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 6 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 6 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 24 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 24 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 24 == 96
+========================= 5 failed, 8 passed in 0.71s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ........FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 6 == 10
+E        +  where 6 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 6 == 20
+E        +  where 6 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 24 == 72
+E        +  where 24 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 24 == 60
+E        +  where 24 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 24 == 96
+E        +  where 24 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 6 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 6 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 24 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 24 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 24 == 96
+========================= 5 failed, 8 passed in 0.70s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ........FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 6 == 10
+E        +  where 6 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 6 == 20
+E        +  where 6 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 24 == 72
+E        +  where 24 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 24 == 60
+E        +  where 24 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 24 == 96
+E        +  where 24 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 6 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 6 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 24 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 24 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 24 == 96
+========================= 5 failed, 8 passed in 0.68s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ........FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 6 == 10
+E        +  where 6 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 6 == 20
+E        +  where 6 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 24 == 72
+E        +  where 24 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 24 == 60
+E        +  where 24 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 24 == 96
+E        +  where 24 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 6 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 6 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 24 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 24 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 24 == 96
+========================= 5 failed, 8 passed in 0.68s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ........FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 6 == 10
+E        +  where 6 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 6 == 20
+E        +  where 6 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 24 == 72
+E        +  where 24 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 24 == 60
+E        +  where 24 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 24 == 96
+E        +  where 24 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 6 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 6 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 24 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 24 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 24 == 96
+========================= 5 failed, 8 passed in 0.71s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ........FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 6 == 10
+E        +  where 6 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 6 == 20
+E        +  where 6 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 24 == 72
+E        +  where 24 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 24 == 60
+E        +  where 24 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 24 == 96
+E        +  where 24 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 6 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 6 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 24 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 24 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 24 == 96
+========================= 5 failed, 8 passed in 0.69s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ........FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 6 == 10
+E        +  where 6 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 6 == 20
+E        +  where 6 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 24 == 72
+E        +  where 24 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 24 == 60
+E        +  where 24 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 24 == 96
+E        +  where 24 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 6 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 6 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 24 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 24 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 24 == 96
+========================= 5 failed, 8 passed in 0.74s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ........FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 6 == 10
+E        +  where 6 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 6 == 20
+E        +  where 6 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 24 == 72
+E        +  where 24 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 24 == 60
+E        +  where 24 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 24 == 96
+E        +  where 24 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 6 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 6 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 24 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 24 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 24 == 96
+========================= 5 failed, 8 passed in 0.74s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ........FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 6 == 10
+E        +  where 6 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 6 == 20
+E        +  where 6 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 24 == 72
+E        +  where 24 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 24 == 60
+E        +  where 24 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 24 == 96
+E        +  where 24 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 6 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 6 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 24 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 24 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 24 == 96
+========================= 5 failed, 8 passed in 0.70s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ........FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 6 == 10
+E        +  where 6 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 6 == 20
+E        +  where 6 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 24 == 72
+E        +  where 24 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 24 == 60
+E        +  where 24 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 24 == 96
+E        +  where 24 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 6 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 6 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 24 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 24 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 24 == 96
+========================= 5 failed, 8 passed in 0.68s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ........FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 6 == 10
+E        +  where 6 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 6 == 20
+E        +  where 6 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 24 == 72
+E        +  where 24 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 24 == 60
+E        +  where 24 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 24 == 96
+E        +  where 24 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 6 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 6 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 24 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 24 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 24 == 96
+========================= 5 failed, 8 passed in 0.68s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ........FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 6 == 10
+E        +  where 6 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 6 == 20
+E        +  where 6 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 24 == 72
+E        +  where 24 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 24 == 60
+E        +  where 24 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 24 == 96
+E        +  where 24 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 6 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 6 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 24 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 24 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 24 == 96
+========================= 5 failed, 8 passed in 0.69s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ........FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 6 == 10
+E        +  where 6 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 6 == 20
+E        +  where 6 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 24 == 72
+E        +  where 24 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 24 == 60
+E        +  where 24 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 24 == 96
+E        +  where 24 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 6 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 6 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 24 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 24 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 24 == 96
+========================= 5 failed, 8 passed in 0.69s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ...........FF                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 100 == 60
+E        +  where 100 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 100 == 96
+E        +  where 100 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 100 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 100 == 96
+========================= 2 failed, 11 passed in 0.67s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ........FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 9 == 10
+E        +  where 9 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 19 == 20
+E        +  where 19 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 71 == 72
+E        +  where 71 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 95 == 60
+E        +  where 95 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 95 == 96
+E        +  where 95 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 9 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 19 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 71 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 95 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 95 == 96
+========================= 5 failed, 8 passed in 0.68s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ........FFFFF                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_1 __________________________
+
+    def test_mostTouchableLocker_1():
+>       assert mostTouchableLocker(10, 10) == 10
+E       assert 9 == 10
+E        +  where 9 = mostTouchableLocker(10, 10)
+
+test_student.py:34: AssertionError
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 19 == 20
+E        +  where 19 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+E       assert 71 == 72
+E        +  where 71 = mostTouchableLocker(72, 100)
+
+test_student.py:40: AssertionError
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 95 == 60
+E        +  where 95 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+__________________________ test_mostTouchableLocker_5 __________________________
+
+    def test_mostTouchableLocker_5():
+>       assert mostTouchableLocker(100, 100) == 96
+E       assert 95 == 96
+E        +  where 95 = mostTouchableLocker(100, 100)
+
+test_student.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_1 - assert 9 == 10
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 19 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - assert 71 == 72
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 95 == 60
+FAILED test_student.py::test_mostTouchableLocker_5 - assert 95 == 96
+========================= 5 failed, 8 passed in 0.70s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ...........F.                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 96 == 60
+E        +  where 96 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 96 == 60
+========================= 1 failed, 12 passed in 0.68s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py .........FF..                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 10 == 20
+E        +  where 10 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+
+test_student.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 72, number_of_students = 100
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers+1):
+            a.append(i)
+        for j in range(number_of_students):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:42: IndexError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 10 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - IndexError: list index o...
+========================= 2 failed, 11 passed in 0.68s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py .........FF..                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 10 == 20
+E        +  where 10 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+
+test_student.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 72, number_of_students = 100
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers+1):
+            a.append(i)
+        for j in range(number_of_students):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:42: IndexError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 10 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - IndexError: list index o...
+========================= 2 failed, 11 passed in 0.68s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py .........FF..                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 10 == 20
+E        +  where 10 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+
+test_student.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 72, number_of_students = 100
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers+1):
+            a.append(i)
+        for j in range(number_of_students):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:42: IndexError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 10 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - IndexError: list index o...
+========================= 2 failed, 11 passed in 0.67s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py .........FF..                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 10 == 20
+E        +  where 10 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+
+test_student.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 72, number_of_students = 100
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers+1):
+            a.append(i)
+        for j in range(number_of_students):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:42: IndexError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 10 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - IndexError: list index o...
+========================= 2 failed, 11 passed in 0.68s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py .........FF..                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 10 == 20
+E        +  where 10 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+__________________________ test_mostTouchableLocker_3 __________________________
+
+    def test_mostTouchableLocker_3():
+>       assert mostTouchableLocker(72, 100) == 72
+
+test_student.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number_of_lockers = 72, number_of_students = 100
+
+    def mostTouchableLocker(number_of_lockers,number_of_students):
+        a = []
+        b = []
+        for i in range (1,number_of_lockers+1):
+            a.append(i)
+        for j in range(number_of_students):
+>           c = most_factors(a[j])
+E           IndexError: list index out of range
+
+a04.py:42: IndexError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 10 == 20
+FAILED test_student.py::test_mostTouchableLocker_3 - IndexError: list index o...
+========================= 2 failed, 11 passed in 0.68s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ...........F.                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 96 == 60
+E        +  where 96 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 96 == 60
+========================= 1 failed, 12 passed in 0.70s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py ...........F.                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_4 __________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 96 == 60
+E        +  where 96 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 96 == 60
+========================= 1 failed, 12 passed in 0.68s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py .........F...                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 10 == 20
+E        +  where 10 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 10 == 20
+========================= 1 failed, 12 passed in 0.70s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py .........F...                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 10 == 20
+E        +  where 10 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 10 == 20
+========================= 1 failed, 12 passed in 0.69s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py .........F...                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 10 == 20
+E        +  where 10 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 10 == 20
+========================= 1 failed, 12 passed in 0.68s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py .........F...                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 10 == 20
+E        +  where 10 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 10 == 20
+========================= 1 failed, 12 passed in 0.69s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py .........F...                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_mostTouchableLocker_2 __________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 10 == 20
+E        +  where 10 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+=========================== short test summary info ============================
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 10 == 20
+========================= 1 failed, 12 passed in 0.69s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/hassan/Documents/Uni/Sem1/Programming Fundamental/assignment3
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: signal
+timeout func_only: False
+collected 13 items
+
+test_student.py .............                                            [100%]
+
+============================== 13 passed in 0.66s ==============================
